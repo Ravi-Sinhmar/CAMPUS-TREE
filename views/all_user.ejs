@@ -567,7 +567,7 @@ let menu=document.getElementById("menu")
 
 <script>
 
-console.log("Ok");
+
 let search_btn=document.getElementById("search_btn");
 let icon=document.getElementById("icon");
 const searchInput = document.querySelector(".search-container input");
@@ -576,7 +576,7 @@ let allData={};
 let can_search=false;
 
 window.onload=async()=>{
-const response = await fetch("http://localhost:3000/other_profile", {      //localhost:3000
+const response = await fetch("https://campus-tree.onrender.com/other_profile", {      //localhost:3000
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
        headers: {
         'Content-Type': 'application/json'
@@ -643,8 +643,8 @@ profile.innerHTML+=`
 
 
     }).catch((err)=>{
-        console.log(err);
-        alert("Something went wrong");
+        
+      
     });
 };
 
@@ -664,7 +664,6 @@ return false;
 }else if (event.key === "Enter" &&input_user.value.length!=0) {
 e.preventDefault();
 search_btn.click();
-console.log("ok");
 }
 })
 
@@ -676,7 +675,6 @@ const seeProfile=((userId)=>{
 //post requests
 
 
-console.log(userId);
  window.location.href= "/user/"+userId;
   
 });
@@ -691,14 +689,14 @@ search_btn.addEventListener("click", () => {
      
 
 
-  console.log("You searched for:", searchTerm);
+ 
   
   if(can_search==true  && searchInput.value!=""){
    //for showing no user found
    
-      console.log(allData);
+      
       profiless=document.getElementById("profile");
-      console.log(profiless);
+  
       let nothing=false;
    
       allData.forEach((item,index)=>{

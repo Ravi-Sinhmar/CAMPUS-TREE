@@ -332,5 +332,5 @@ else{
   textarea1.addEventListener("keypress",(e)=>{if(e.keyCode==32 && textarea1.value==""){e.preventDefault(); return false;}})
   textarea2.addEventListener("keypress",(e)=>{if(e.keyCode==32 && textarea2.value==""){e.preventDefault(); return false;}})
   projectType.addEventListener("keypress",(e)=>{if(e.keyCode==32 && projectType.value==""){e.preventDefault(); return false;}})
-  teamMembers.addEventListener("keypress",(e)=>{if(e.keyCode>48 && e.keyCode<58){console.log("ikak"); return true; }  else{e.preventDefault();return false;} });
+  teamMembers.addEventListener("keypress",(e)=>{if(e.keyCode>48 && e.keyCode<58){ return true; }  else{e.preventDefault();return false;} });
 </script>

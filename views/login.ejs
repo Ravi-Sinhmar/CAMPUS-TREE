@@ -403,7 +403,7 @@ color: #002651;
 <% if (typeof status != "undefined" && status=='false' && title=="Not_found"  ) { %>
   <script defer >
     
-    alert('<%= message%>'); 
+  
  password_field=document.getElementById("password_field");
  email=document.getElementById("email");
 password_field.type="text";
@@ -421,7 +421,7 @@ email.style.border="3px solid #FF9494";
 <% if (typeof status != "undefined" && status=='false' && title=="password"  ) { %>
   <script>
     
-    alert('<%= message%>'); 
+    
 password_field=document.getElementById("password_field");
  email=document.getElementById("email");
 password_field.type="text";
@@ -445,7 +445,7 @@ password_field.style.border="3px solid #FF9494";
 
  <% if (typeof status != "undefined" && status=='false' && title=='Internal') { %>
   <script>
-      alert('<%= message%>'); 
+      
       </script>
        
     <% } %>
@@ -490,8 +490,8 @@ button_s.addEventListener("click",()=>{
   
 if(ValidateEmail(email.value)){
 if(ValidatePassword(password_field.value)){
-console.log("YEPP!!");
-alert("YEP!");
+
+
  button_s.type="submit";
 
 }else{

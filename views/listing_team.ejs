@@ -335,7 +335,6 @@ const response=await fetch("http://localhost:3000/showing-team",{
   
   return response.json();
 }).then((data)=>{
-console.log(data);
 
 data.forEach((ele)=>{
   ele.teams.forEach((element)=>{

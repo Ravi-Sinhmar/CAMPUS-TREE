@@ -583,7 +583,7 @@ let skill =document.getElementById("skill");
     //and for icon also
     //seach genrally for EventListener
     const search=((ele)=> {
-    console.log("ele");
+   
        
         if(event.key === 'Enter') {
             if(ele.value!=""){
@@ -602,7 +602,7 @@ let skill =document.getElementById("skill");
           skill.appendChild(x); 
           x.appendChild(input);
              let icon=document.createElement("i");  icon.setAttribute("class","fa fa-window-close"); icon.setAttribute("aria-hidden","true"); icon.style.color="black"; icon.style.margin="5px"; icon.setAttribute("onclick",`del(this.parentElement)`);
-       console.log(icon); x.appendChild(icon);
+      
        
     
         }else{
@@ -615,7 +615,7 @@ let skill =document.getElementById("skill");
     });
          const del=((e)=>{
            
-          console.log(e);
+          
           e.remove();
                
          });  //onlick function to remove the element 
@@ -677,7 +677,7 @@ let skill =document.getElementById("skill");
              let input_textarea=document.getElementById("input_textarea");
             
             input_textarea.value=profile_input.value.trim();
-            console.log(input_textarea.value);
+           
             
          
                 if(validate_city(city.value)){

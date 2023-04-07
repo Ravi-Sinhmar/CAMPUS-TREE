@@ -76,9 +76,9 @@ input:hover{
       
       <% if (status == false) { %>
         <script>
-          alert('<%= message %>');
+          
         </script>
-        <% console.log("error"); %>
+      
       <% } %>
        
 
@@ -171,7 +171,6 @@ button.addEventListener("click",()=>{
     if(ist_input.value!=" " && second_input.value!="" && third_input.value!="" && fourth_input.value!=""){
 main_input.value=ist_input.value+second_input.value+third_input.value+fourth_input.value;
 button.setAttribute("form","FORMID");
-console.log(main_input.value);
 button.type="submit";
 }else{
 

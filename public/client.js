@@ -276,7 +276,6 @@ if(arr_chats.length!=0){
         
         }
     }
-        alert(username);
 
         
         allchats.style="display:flex;flex-direction:column"
@@ -347,7 +346,6 @@ location.reload();
 }) }
 
 else{
-    alert(username);
     allchats.style="display:flex;flex-direction:column"
     profile.style.display="none";
     main_row.style.display="block";
@@ -364,7 +362,6 @@ group_id = group_id.toString().replace(".","_");
     // }
     members.push(v2);
     
-alert(cookies_user_id)
    
     const request=await fetch("http://localhost:3000/creategroup",{
         method:"POST",
@@ -632,7 +629,6 @@ Specific_chat_name=name;
               return Response.json();
           }).then((data)=>{
 
-        console.log("this is data"+data.message)
             
 for(let i=0; i<data.message.length;i++){
 if(data.message[i].sentby==cookies_user_name){
@@ -761,14 +757,11 @@ function scrollToBottom() {
 
 //my code
 window.onload=(async()=>{
-alert(arr_chats.length)
     cookiearray = document.cookie.split(';');
     cookies_user_id = cookiearray[1].split('=')[1];
   let  cookies_user_name_noneformate=cookiearray[2].split('=')[1];
     cookies_user_name=decodeURIComponent(cookies_user_name_noneformate)
-    console.log(cookies_user_name);
     //access cookies of user
-console.log(cookies_user_id);
 //fetch'
 let x=" ";
 
@@ -785,7 +778,6 @@ fetch("http://localhost:3000/all_chats_details",{
 }).then((data)=>{
 
     arr_chats=data;
-    console.log(arr_chats);
     for(let i=0;i<data.all_chat.length;i++){
         const groupbutton=document.createElement("button");
         groupbutton.classList.add("button","overchatbtn");
@@ -963,7 +955,6 @@ function myFunction(x) {
     isgroup=0;
     group_input_div.style.display="none";
     main_row.style.display="none";
-alert("hi")
     const response = await fetch("http://localhost:3000/other_profile", {      //localhost:3000
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
        headers: {
@@ -981,7 +972,6 @@ alert("hi")
     }).then((data)=>{
         
       //console.log(data);
-      console.log(data);
 //allData=data;
 //console.log(allData);
   
@@ -1028,8 +1018,7 @@ profile.innerHTML+=`
     
 
     }).catch((e)=>{
-        console.log(e);
-        alert("Something went wrong");
+        
     });
   })
 
@@ -1050,7 +1039,6 @@ profile.innerHTML+=`
       return Response.json();
     }).then((data)=>{
       //console.log(data);
-      console.log(data);
 //allData=data;
 //console.log(allData);
   
@@ -1101,7 +1089,6 @@ profile.innerHTML+=`
 
 
     }).catch((e)=>{
-        console.log(e);
-        alert("Something went wrong");
+        
     });
   })

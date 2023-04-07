@@ -301,7 +301,7 @@ font-weight: 800;
   tgl_button.addEventListener("click",()=>{if(tgl_button.classList.contains("collapsed")){full_card.style.marginTop="4rem";}   else{full_card.style.marginTop="15rem"}   });
  window.onload = async() => {
   
-const response=await fetch("http://localhost:3000/show_hackathon",{
+const response=await fetch("https://campus-tree.onrender.com/show_hackathon",{
   method:"POST",
   headers: {
         'Content-Type': 'application/json'
@@ -313,7 +313,7 @@ const response=await fetch("http://localhost:3000/show_hackathon",{
   
   return response.json();
 }).then((data)=>{
-console.log(data);
+
 
 data.forEach((ele)=>{
   ele.hackathon_detail.forEach((element)=>{

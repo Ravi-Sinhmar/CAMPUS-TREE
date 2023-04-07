@@ -1236,7 +1236,7 @@ profileFile.addEventListener("change", (e) => {
          //animation
          
          
-         const request=await fetch("http://localhost:3000/upload_profile",{
+         const request=await fetch("https://campus-tree.onrender.com/upload_profile",{
           method:"POST",
           headers:{
             "Content-Type":"application/json",
@@ -1255,12 +1255,10 @@ profileFile.addEventListener("change", (e) => {
           profileImage.src= imgSrc;
           
           profileImage.style.border="1px transparent";
-           console.log(data);
          }).catch((err)=>{
           loader_icon.style.display="none";
           change_profile_button.style.display="block";
           alert("Upload failed try again later");
-          console.log(err);
 
          })
         
@@ -1276,18 +1274,16 @@ profileFile.addEventListener("change", (e) => {
     
     
  const fun1=()=>{
-console.log("hello");
  }
 
  window.onload = async()=>{
     // your code here
-console.log("okay");
 
 //const response0=await fetch("https://localhost:3000/")
 
 
 
-    const response = await fetch("http://localhost:3000/other_profile", {
+    const response = await fetch("https://campus-tree.onrender.com/other_profile", {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
        headers: {
         'Content-Type': 'application/json'
@@ -1298,7 +1294,6 @@ console.log("okay");
     }).then((Response)=>{
       return Response.json();
     }).then((data)=>{
-      console.log(data);
 
 let profiless=document.getElementById("profiles");
 
@@ -1310,7 +1305,6 @@ data.forEach((data,n)=>{
   pbox.setAttribute("class","pbox");
   profiless.appendChild(pbox);
   user_id=data.user_id.toString();
-console.log(data.user_id.toString());
 pbox.innerHTML+=`
    
       <div class="text-center card-box">
@@ -1327,7 +1321,7 @@ pbox.innerHTML+=`
           })
 
 
-    const response3=await fetch("http://localhost:3000/show_challenges",{
+    const response3=await fetch("https://campus-tree.onrender.com/show_challenges",{
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
        headers: {
         'Content-Type': 'application/json'
@@ -1338,7 +1332,6 @@ pbox.innerHTML+=`
     }).then((Response)=>{
       return Response.json();
     }).then((data)=>{
-      console.log(data);
 
 
       data.forEach((ele)=>{
@@ -1404,7 +1397,6 @@ const seeProfile=((userId)=>{
 //post requests
 
 
-console.log(userId);
  window.location.href= "/user/"+userId;
   
 });

@@ -562,11 +562,6 @@ color: white;
 <% if (status=='false' &&  title=='Email' ) { %>
                         
   <script >
-      console.log("<%= status%>");
-      console.log("<%= title%>");
-      alert('<%= message%>'); 
-      console.log("<%= message%>");
-      console.log("<%= message%>"=="Email Exist");
       
        email=document.getElementById("email");
        full_name_field=document.getElementById("full_name_field");
@@ -578,7 +573,6 @@ city=document.getElementById("city");
       
    email.style.border="3px solid #FF9494";     
       //value assign
-      console.log("<%= user.email%>");
       email.value= "<%= user.email%>";
       full_name_field.value="<%= user.full_name%>";
       user_id_field.value="<%= user.user_id%>";
@@ -596,7 +590,6 @@ city=document.getElementById("city");
 
 <% if (status=='false' && title=='Internal') { %>
 <script>
-    alert('<%= message%>'); 
     </script>
      
   <% } %>
@@ -608,7 +601,6 @@ city=document.getElementById("city");
                       
     <script defer>
    
-        alert('<%= message%>'); 
         
         
          email=document.getElementById("email");
@@ -621,7 +613,6 @@ city=document.getElementById("city");
         
      user_id_field.style.border="3px solid #FF9494";     
         //value assign
-        console.log("<%= user.email%>");
         email.value= "<%= user.email%>";
         full_name_field.value="<%= user.full_name%>";
         user_id_field.value="<%= user.user_id%>";
@@ -745,7 +736,6 @@ submit_button.addEventListener("click",()=>{
 
 
 
-console.log("Hey!");
 //check first name and User Id
 //function se bhi kr skta tha
 //but 
@@ -825,7 +815,7 @@ alert("First name should be 3 digits long or should be a name");
 college.addEventListener("keypress",(e)=>{if(e.keyCode==13){submit_button.click();}else if(e.keyCode>64 && e.keyCode<91 || e.keyCode >96 && e.keyCode<123 ||e.keyCode==32){  }else{e.preventDefault();return false;}});
 
 
-user_id_field.addEventListener("keypress",(e)=>{console.log(e);if(e.keyCode==32){e.preventDefault(); false;}});
+user_id_field.addEventListener("keypress",(e)=>{if(e.keyCode==32){e.preventDefault(); false;}});
 full_name_field.addEventListener("keypress",((e)=>{ if(e.keyCode>64 && e.keyCode<91 || e.keyCode >96 && e.keyCode<123 ||e.keyCode==32){  }else{e.preventDefault();return false;} }));
 city.addEventListener("keypress",((e)=>{ if(e.keyCode>64 && e.keyCode<91 || e.keyCode >96 && e.keyCode<123 ||e.keyCode==32){  }else{e.preventDefault();return false;} }));
 college.addEventListener("keypress",((e)=>{  }));
