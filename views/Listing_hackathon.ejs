@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700&family=Karla:wght@600&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+    <link rel="stylesheet" href="styles.css">
+    <title>hackathon</title>
+    <style>
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #002651;
+}
+#nav-register-now{
+      width: 9rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 3px;
+  margin-left: auto;
+  background: #be6a15;
+  margin-right: 48px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  
+    }
+
+    #nav-register-now:hover{
+background: white;
+color: #002651;
+    }
+
+    #nav_logo button{
+      font-size: 2rem;
+      border: none;
+    }
+    #navabar_links a{
+  color: white;
+  visibility: visible;
+  text-decoration: none;
+  text-decoration-style: none;
+  }
+
+  #navabar_links a:hover{
+    color: #be6a15;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .nav-link{
+    font-size: 1.2rem;
+  margin-right: 1.2rem;
+  text-decoration: none;
+  text-decoration-style: none;
+  }
+
+
+  .navbar-brand{
+    font-size: 2.2rem;
+   
+  }
+  .navbar-brand:hover{
+    color: #be6a15;
+    font-weight: 800;
+  }
+ 
+  .copyright{
+    font-weight: 400;
+  color:#be6a15;
+  font-family: 'Hanken Grotesk', sans-serif;
+  text-decoration: none;
+  text-decoration-style: none;
+ 
+  }
+ 
+  #footer a:hover{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #be6a15;
+  }
+#nav_bar{
+  top:0;
+}
+
+#full-card{
+    background: #002651;
+    color: white;
+    font-size: 1rem;
+    border-bottom: 4px solid white;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin-top: 4rem;
+    transition: all 0.25s ease 0s
+}
+.leading-relaxed{
+    font-size: 2.2rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+#college-name{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #be6a15;
+    margin-bottom: 1rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+#hackthon-name{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #be6a15;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+#button-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+#button-div button{
+background-color: #be6a15;
+font-size: 1.3rem;
+font-weight: 600;
+height: fit-content;
+width: fit-content;
+
+}
+#button-div span{
+font-size: 1.4rem;
+}
+#button-div button:hover{
+background-color: white;
+color: #002651;
+font-weight: 800;
+}
+#price-column{
+    font-size: 1.7rem;
+    color: #be6a15;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+#buttondiv_inside{
+  display: flex;
+    width: 20rem;
+    flex-wrap: wrap
+}
+
+#desciption{
+  font-size: 1.5rem
+}
+
+@media only screen and 
+    (max-width: 560px){
+
+        .leading-relaxed{
+    font-size: 1rem;
+} 
+
+#price-column{
+    font-size: 1rem;
+    color: #be6a15;
+}
+
+
+    }
+
+    #footer{
+  height: 6rem;
+  background-color: #002651;
+    font-size: 1.2rem;
+    padding-top: 1.7rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+}   
+
+#footer{
+      height: 6rem;
+    background-color: #002651;
+    font-size: 1.2rem;
+    padding-top: 1.7rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: white
+}
+.copyright{
+  font-weight: 400;
+    color: #be6a15;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-decoration: none
+   
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main-page">
+      <nav id="nav_bar" style=" position: fixed; width: 100vw;z-index: 2; font-family: 'Hanken Grotesk', sans-serif; background-color: #002651" class="navbar navbar-expand-lg navbar-dark">
+        <div id="nav_logo" class="container-fluid">
+          
+          <a class="navbar-brand" style=" background-color: ;" href="#campus-tree">Campus Tree </a>
+         
+          <button id="tgl_button" style="border: none; color: white; 
+          " ;="" class="navbar-toggler me-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> <i class="fa-solid fa-bars"></i></span>
+          </button>
+          
+          <div class="navbar-collapse collapse" id="nav-toggle" style="">
+            <ul id="navabar_links" class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
+              <a class="nav-link " href="/">Home</a>
+              <a class="nav-link " href="/challenges">Challenges</a>
+              <a class="nav-link" href="/team">Team</a>
+              <a class="nav-link" href="/login">Login</a>
+          
+            </ul>
+          </div>
+         
+        </div>
+      </nav>
+            <section id="full-card" class="0gray-600 body-font overflow-hidden">
+             
+
+      <!--Demo page-->
+      
+      <!-- <div class="container px-5 py-24 mx-auto">
+        <div class="">
+          <div class=" w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+            <h2 id="college-name" class="">IIT Delhi</h2>
+            <h1 id="hackthon-name" class="0gray-900 03xl title-font font-medium mb-1">Build-A-Thon</h1>
+            
+            <p id="desciption" class="leading-relaxed">Build-A-Thon is a learning ecosystem comprising of different offerings aimed to enhance the skills of engineering students. It includes technology labs, DIY boxes, workshops, and the Build-A-Thon event. Through these offerings, we aim to build human capital by enriching them with technologies-in-demand.</p>
+            <div id="price-column" class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+              <div class="flex">
+                <span class="mr-3 0xl"><b>1st Prize: 10k</b></span>
+              </div>
+              <div class="flex">
+                <span class="mr-3 0xl"><b>2nd Prize: 7k</b></span>
+              </div>
+              <div class="flex">
+                <span class="mr-3 0xl"><b>3rd Prize: 5k</b></span>
+              </div>
+            </div>
+            <div id="button-div" style="display: flex; flex-direction: row; align-items: center;"  class="flex">
+             <span>Fee:</span><span  style="color: #be6a15;" class="title-font "> 199 Rs.</span>
+              <button href="#" class="flex ml-auto 0white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Participate</button>
+           
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+
+
+            </section>
+
+           
+
+       <!--Footer--> 
+       <div id="footer" class="text-center" style="">
+        © 2023 Copyright:
+  <a class=" copyright " href="/" style="
+  
+  color:#be6a15;
+  ">Campustree.com</a>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/1b26aa43df.js" crossorigin="anonymous"></script>
+    
+    <script>
+     
+
+
+            
+
+// var x = window.matchMedia("(max-width: 1250px)");
+//      function myFunction(x) {
+// if (x.matches) { // If media query matches
+//  feature_div.classList.add("flex-wrap");    
+// } else {
+// feature_div.classList.remove("flex-wrap"); 
+// }
+// } myFunction(x); x.addListener(myFunction);
+    </script>
+</body>
+</html>
+
+
+<script>
+
+  
+  let full_card=document.getElementById("full-card");
+  let tgl_button=document.getElementById("tgl_button");
+  tgl_button.addEventListener("click",()=>{if(tgl_button.classList.contains("collapsed")){full_card.style.marginTop="4rem";}   else{full_card.style.marginTop="15rem"}   });
+ window.onload = async() => {
+  
+const response=await fetch("http://localhost:3000/show_hackathon",{
+  method:"POST",
+  headers: {
+        'Content-Type': 'application/json'
+
+       },
+}).then((response)=>{
+
+
+  
+  return response.json();
+}).then((data)=>{
+console.log(data);
+
+data.forEach((ele)=>{
+  ele.hackathon_detail.forEach((element)=>{
+  
+
+
+    let new_ele=`<div class="container px-5 py-24 mx-auto" style="    margin-top: -5rem">
+                <div class="">
+                  <div class=" w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 style="font-size:1.4rem" id="college-name" class="">${element.location}</h2>
+                    <h1 style="font-size:1.8rem" id="hackthon-name" class="0gray-900 03xl title-font font-medium mb-1">${element.hackathon_name}</h1>
+                    
+                    <p id="desciption" class="leading-relaxed">${element.description}</p>
+                    <div id="price-column" class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+                      <div class="flex">
+                        <span class="mr-3 0xl"><b>1st Prize: ${element.prize.ist} Rs</b></span>
+                      </div>
+                      <div class="flex">
+                        <span class="mr-3 0xl"><b>2nd Prize: ${element.prize.second} Rs</b></span>
+                      </div>
+                      <div class="flex">
+                        <span class="mr-3 0xl"><b>3rd Prize:${element.prize.third} Rs</b></span>
+                      </div>
+                    </div>
+                    <div id="button-div" style="display: flex; flex-direction: row; justify-content: space-between"  class="flex">
+                     <div id="fees_deatils">
+                      <span>Fee:</span><span  style="color: #be6a15;" class="title-font "> ${element.fees} Rs.</span>
+                     </div>
+
+                     <div id="buttondiv_inside">
+
+                      
+                      <button href="#" class="flex ml-auto 0white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded"><a href="${element.contact_link}">
+                          Contact
+                          </a></button>
+
+                          <button href="#" class="flex ml-auto 0white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">
+                        
+                        <a href="${element.hackathon_link}">
+                          Participate
+                          </a>
+                        </button>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div> `;
+
+              full_card.innerHTML+=new_ele;
+
+
+    
+  });
+})
+
+
+})
+};
+
+
+
+
+ 
+</script>

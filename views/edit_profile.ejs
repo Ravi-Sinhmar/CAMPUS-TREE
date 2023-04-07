@@ -1,0 +1,741 @@
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="hstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Cinzel&family=Montserrat:wght@100&family=Mukta:wght@200&family=Rokkitt:wght@100&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700&family=Karla:wght@600&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Edit-Profile</title>
+  
+ 
+  
+
+
+<style>
+body{
+  color: white;
+  
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+.logo{
+ 
+  font-size: 2.6rem;
+  
+  margin-left: 0.8rem;
+  letter-spacing:0;
+  font-family: 'Alkatra', cursive;
+
+}
+
+#bars{
+  font-size: 3rem;
+ 
+  
+}
+#xmark{
+font-size: 3rem;
+color: white;
+}
+#menu a{
+font-size: 2rem;
+
+}
+#menubar{
+  height: 6rem;
+  background-color: #002651;
+  color: white;
+
+}
+
+
+
+#main-container{
+  padding: 10rem 2rem;
+  background-color: white;
+  transition: all 0.25s ease 0s
+}
+#main-div{
+  margin-top: 12rem;
+  background-color: white;
+
+}
+#inside-main-container{
+  margin-bottom: 2rem;
+  border: 2px solid white;
+}
+
+
+
+#main-card{
+  background: #002651;
+  margin-bottom: 2rem;
+}
+
+
+#avatar-user{
+  padding-top: 1rem;
+}
+#avatar-user img{
+  margin: 0rem auto;
+  background: white;
+  width: 8rem;
+  height: 8rem;
+}
+
+#upper-section h5{
+font-size: 1.5rem;
+
+}
+
+
+#upper-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.account-settings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about-section {
+  background:#be6a15;
+  border: 3px solid #002651 ;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-align: left;
+  padding-left: 7px;
+  font-family:monospace;
+  width: 100%;
+  height: fit-content;
+}
+
+#about-section h5{
+font-size: 1.5rem;
+color: black;
+margin-bottom: -0.2rem;
+
+}
+#about-section p{
+font-size: 1rem;
+color: black;
+
+}
+
+#lower-section{
+
+border: 2px solid white;
+
+}
+#lower-section-inside{
+
+background-color: #002651 ;
+color: white;
+font-size: 1.3rem;
+padding: 0.6rem;
+}
+
+#personal-detail h6{
+  text-align: center;
+  color: #be6a15;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+}
+
+#form-details input{
+  color: white;
+  font-size: 1.3rem;
+  padding-left: 0.5rem;
+  background: #be6a15;
+}
+
+
+#additional-div h6{
+text-align: center;
+font-size: 1.6rem;
+font-weight: 600;
+color: #be6a15;
+}
+
+#form-details label{
+  padding-left: 0.5rem;
+}
+
+
+
+#additional-details label{
+padding-left: 0.5rem;
+}
+
+#additional-details input{
+     padding-left: 0.5rem;
+     color: white;
+  font-size: 1.3rem;
+  background-color: #be6a15;
+
+}
+#about-details label {
+  padding-left: 0.5rem;
+}
+#about-details textarea{
+  padding-left: 0.5rem;
+     color: white;
+  font-size: 1.3rem;
+  background-color: #be6a15;
+}
+#login-card{
+ 
+  border-radius: 2rem;
+  margin-top: 15rem;
+  padding: 1rem 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color:#002651 ;
+
+
+}
+#login-card  h1{
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+ 
+}
+
+
+
+.ravi{
+  color: red;}
+
+  #login-card p{
+      font-size: 1.2rem;
+      
+  }
+
+#login-card input{
+ height: 4rem;
+ padding-left:1rem;
+ background-color: #be6a15;
+color:white;
+margin-bottom: 2px;
+
+
+
+}
+
+#forget-section a{
+  color: white;
+  margin-top: 1.4rem;
+}
+#login-card button{
+ height: 4rem;
+ padding-left:1rem;
+ background-color: white;
+color:white;
+font-size: 2.2rem;
+margin-top: 1rem;
+background-color: rgb(21, 26, 27);
+
+}
+
+
+#submit{
+  margin: 1rem;
+  margin-top: 2rem;
+  background: #be6a15;
+  color: white;
+  font-size: 1.5rem;
+  width: 8rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+#submit:hover{
+  background: white;
+  color: #002651
+  ;
+}
+
+
+
+#below_signup{
+  color: white;
+  font-size: 1.6rem;
+}
+#footer{
+height: 6rem;
+background-color: #002651;
+  font-size: 1.6rem;
+  padding: 1.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#nav-register-now{
+      width: 9rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 3px;
+  margin-left: auto;
+  background: #be6a15;
+  margin-right: 48px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  
+    }
+
+    #nav-register-now:hover{
+background: white;
+color: #002651;
+    }
+
+    #nav_logo button{
+      font-size: 2rem;
+      border: none;
+    }
+    #navabar_links a{
+  color: white;
+  visibility: visible;
+  text-decoration: none;
+  text-decoration-style: none;
+  }
+
+  #navabar_links a:hover{
+    color: #be6a15;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .nav-link{
+    font-size: 1.2rem;
+  margin-right: 1.2rem;
+  text-decoration: none;
+  text-decoration-style: none;
+  }
+
+
+  .navbar-brand{
+    font-size: 2.2rem;
+   
+  }
+  .navbar-brand:hover{
+    color: #be6a15;
+    font-weight: 800;
+  }
+ 
+  .copyright{
+    font-weight: 400;
+  color:#be6a15;
+  font-family: 'Hanken Grotesk', sans-serif;
+  text-decoration: none;
+  text-decoration-style: none;
+ 
+  }
+ 
+  #footer a:hover{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #be6a15;
+  }
+#nav_bar{
+  top:0;
+}
+
+
+</style>
+
+
+</head>
+<body id="body" style="padding-top: 0px;">
+  <div id="wrapper" class="flex flex-col justify-between h-screen">
+      <nav id="nav_bar" style="top: 0; position: fixed; width: 100vw;z-index: 2; font-family: 'Hanken Grotesk', sans-serif; background-color: #002651" class="navbar navbar-expand-lg navbar-dark">
+          <div id="nav_logo" class="container-fluid">
+            
+            <a class="navbar-brand" style=" background-color: ;" href="#campus-tree">Campus Tree </a>
+            <div id="nav-register-now" style="
+        
+        ">
+        
+      <a href="/announcement">
+       Announcement
+      </a>
+      </div>
+            <button id="tgl_button" style="border: none; color: white; 
+            "; class="navbar-toggler collapsed me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> <i class="fa-solid fa-bars" ></i></span>
+            </button>
+            
+            <div  class="collapse navbar-collapse" id="nav-toggle">
+              <ul id="navabar_links"class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
+                <a  class="nav-link "href="/myprofile">My Profile</a>
+                <a class="nav-link " href="/hackathon">Hackathons</a>
+                <a  class="nav-link" href="/challenges">Challenges</a>
+                
+                
+                <a  class="nav-link"  href="/logout">Logout</a>
+            
+              </ul>
+            </div>
+           
+          </div>
+        </nav>
+
+    <div id="main-container" class="" style="transition: all 0.25s ease 0s">
+<div id="inside-main-container" class="row gutters">
+<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+<div id="main-card" style="
+
+/* border-bottom-left-radius: 1rem; */
+/* border-bottom-right-radius: 1rem; */
+"class="card h-100">
+
+    <div class="card-body">
+        <div class="account-settings">
+            <div id="upper-section" class="user-profile">
+                <div id="avatar-user" class="user-avatar">
+                    <img style="border-radius: 50%; border: 5px solid #be6a15;" src="<%=data.profile%>" alt="Maxwell Admin">
+                </div>
+                <h5    class="user-name" id="text_name">@<%=data.user_id%></h5>
+                <h6   class="user-email"><%=data.email%></h6>
+            </div>
+            <div id="about-section" class="about">
+                <h5>About</h5>
+                <p id="about_text">
+                  <%=data.about%></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="lower-section" class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+<div id="lower-section-inside" style="
+
+
+border-radius: 0.5rem;
+" class="card h-100">
+    <div class="card-body">
+<form  action="/edit_profile" method="POST">
+        <div id="form-details" class="row gutters">
+            <div id="personal-detail" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h6 class="mb-2 ">Personal Details</h6>
+            </div>
+            <div id="inside-personal-details"  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input disabled="true" value="<%=data.fullname%>" name="fullname" type="text" class="form-control" id="fullName" placeholder="Enter full name" maxlength="30">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="form-group">
+                    <label for="eMail">User-Id *</label>
+                    <input disabled="true" value="<%=data.user_id%>" name="userid" type="user-id" class="form-control" id="userId" placeholder="Enter user Id " maxlength="15">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="form-group">
+                    <label for="fullName">City *</label>
+                    <input value="<%=data.city%>" name="city" type="text" class="form-control" id="city" placeholder="Enter city" maxlength="30">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="form-group">
+                    <label for="fullName">College *</label>
+                    <input value="<%=data.college%>" name="college" type="text" class="form-control" id="college" placeholder="Enter college name" maxlength="30">
+                </div>
+            </div>
+        </div>
+        <div id="additional-div" class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h6 class="mt-3 mb-2 ">Additional detail</h6>
+            </div>
+            
+            
+            
+            <div  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div  id="additional-details"  class="form-group">
+                    <label for="zIp">Interest</label>
+                    
+<input id="inter" type="text" class="form-control" placeholder="Enter your interest and press enter" onkeydown="search(this)" maxlength="15">
+<div id="hide_input" style="display: none;">
+
+</div>
+<div id="skill" style="margin-top: 1%;
+/* background-color: #c0c0c0; */
+/* border-radius: 0.2rem; */
+/* padding: 0.4rem; */
+/* color: black; */
+/* text-align: center; */
+/* margin: 0.2rem; */
+/* display: inline-block; */
+/* display: flex; */
+/* justify-content: space-around; */
+">
+
+<% for(var i=0;i<data.interest.length;i++){ %>
+  <div style="background-color: #be6a15; border-radius: 0.2rem; padding: 0.4rem; color: white; text-align: center; margin: 0.2rem; display: inline-block;"><%=data.interest[i]%>  
+      <input name="interest[]" value="<%=data.interest[i]%> " style="display: none;"><i class="fa fa-window-close" aria-hidden="true" onclick="del(this.parentElement)" style="color: black; margin: 5px;"></i></div>
+
+
+<%} %>
+
+  
+<!--Ejs for skills-->
+
+
+
+
+
+</div>
+                </div>
+            </div>
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div id="about-details" class="form-group" style="
+display: revert;
+display: grid;
+">
+                    <label for="fullName">About</label>
+                    
+<textarea id="profile_input" placeholder="Enter information about you " rows="1" cols="50" style="height: 52px; outline: black;" maxlength="200">
+<%=data.about%>
+</textarea>
+
+<!--For textArea-->
+<input name="aboutInput" id="input_textarea" style="display: none" value="najja">
+                </div>
+            </div>
+        </div>
+        <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="text-right">
+                    
+                    <button type="button" id="submit"  class="btn btn-primary">Update</button>
+                </div>
+            </div>
+        </div>
+</form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+      <!-- Footer -->
+
+      <div id="footer" class="text-center" style="">
+        © 2023 Copyright:
+  <a class=" copyright " href="" style="
+      font-family: inherit;
+      font-weight: 500;
+  ">Campustree.com</a>
+      </div>
+
+  </div>
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/1b26aa43df.js" crossorigin="anonymous"></script>
+  
+  <script>
+          let menu=document.getElementById("menu")
+     let inside_main_container=document.getElementById("inside-main-container")
+     let tgl_button=document.getElementById("tgl_button");
+     let container=document.getElementById("main-container");
+
+     tgl_button.addEventListener("click",()=>{if(tgl_button.classList.contains("collapsed")){container.style.marginTop="0rem";}   else{container.style.marginTop="9rem"}   });
+
+   
+
+  </script>
+
+</body></html>
+
+
+<script>
+
+/*
+
+Regular expression
+
+
+*/
+let skill =document.getElementById("skill");
+    let hide_input=document.getElementById("hide_input");
+    
+    //when an user enter all his /her interest then
+    //element is create and append it the main div
+    //correstponding input tag fpor dealing with backend
+    //and for icon also
+    //seach genrally for EventListener
+    const search=((ele)=> {
+    console.log("ele");
+       
+        if(event.key === 'Enter') {
+            if(ele.value!=""){
+            event.preventDefault();
+            let x=document.createElement("div"); x.style.cssText ="background-color:#be6a15;border-radius: 0.2rem;padding: 0.4rem;color: black;text-align: center;margin: 0.2rem;display: inline-block"
+          x.innerHTML=ele.value;
+          
+          //assign all values to input
+          let input=document.createElement("input");
+       input.setAttribute("name",`interest[]`);
+          input.value=ele.value;
+          input.style.display="none";
+    //     
+    
+          ele.value="";  
+          skill.appendChild(x); 
+          x.appendChild(input);
+             let icon=document.createElement("i");  icon.setAttribute("class","fa fa-window-close"); icon.setAttribute("aria-hidden","true"); icon.style.color="black"; icon.style.margin="5px"; icon.setAttribute("onclick",`del(this.parentElement)`);
+       console.log(icon); x.appendChild(icon);
+       
+    
+        }else{
+            event.preventDefault();
+        }
+    
+    
+       }
+    
+    });
+         const del=((e)=>{
+           
+          console.log(e);
+          e.remove();
+               
+         });  //onlick function to remove the element 
+    
+    
+         let submit=document.getElementById("submit");
+    
+    
+    
+    
+    
+    
+        //  let email=document.getElementById("email");
+         let city=document.getElementById("city");
+         let college=document.getElementById("college");
+         let fullname=document.getElementById("fullName");
+         let userId=document.getElementById("userId");
+         let profile_input=document.getElementById("profile_input");
+         //validation
+           
+        //  const validate_fullname=((fullname)=>{
+        //     if(regName.test(fullname)){
+        //         return true;
+        //     }return false;
+        //  });
+        //  const validate_userId=((userId)=>{
+        //         if(userId.length>6 && userId.length<15){
+        //             return true;
+        //         } return false;
+        //  })
+         const validate_city=((city)=>{
+           if(city.length>2 && city.length<31){
+               return true;
+           }return false;
+         })
+         const validate_college=((college)=>{
+           if(college.length>2 && college.length<75){
+               return true;
+           }
+         })
+         const validate_interest=(()=>{
+            if(skill.childElementCount>0){
+                return true;
+            }return false;
+         });
+         const validate_about=(()=>{
+          if(profile_input.value.length>6 && profile_input.value.length<200){
+                return true;
+          }return false;
+         });
+         
+         submit.addEventListener("click",()=>{
+            // 
+            let input=document.getElementsByTagName("input"); 
+            for(i=0;i<input.length;i++){input[i].style.border="2px solid transparent";}
+                
+            profile_input.style.border="2px solid transparent";
+            
+             let input_textarea=document.getElementById("input_textarea");
+            
+            input_textarea.value=profile_input.value.trim();
+            console.log(input_textarea.value);
+            
+         
+                if(validate_city(city.value)){
+                 if(validate_college(college.value)){
+                       if(validate_interest()){
+                           if(validate_about()){
+                              submit.type="submit";
+                           }else{
+                               alert("About must be 5 digit long ");
+                               profile_input.style.border="1px solid indianred";
+                           }
+                       }else{
+                           alert("Enter yout interest by pressing enter");
+                           inter.style.border="1px solid indianred";
+                       }
+                 }else{
+                       alert("College name must be 4 digit long");
+                       college.style.border="1px solid indianred";
+                 }
+                }else{
+                        alert("City name must be 3 digit long");
+                      city.style.border="1px solid indianred";                }
+            
+            
+    
+         })
+         //can't 
+         userId.addEventListener("keypress",(e)=>{if(e.keyCode==32){e.preventDefault(); return false;}});
+         fullname.addEventListener("keypress",(e)=>{
+if(e.keyCode==32 && fullname.value.length==0){
+    e.preventDefault();
+    return false;
+}
+         });
+         city.addEventListener("keypress",(e)=>{
+if(e.keyCode==32 && city.value.length==0){
+    e.preventDefault();
+    return false;
+}
+         });
+         college.addEventListener("keypress",(e)=>{
+if(e.keyCode==32 && college.value.length==0){
+    e.preventDefault();
+    return false;
+}
+         });
+         inter.addEventListener("keypress",(e)=>{
+if(e.keyCode==32 && inter.value.length==0){
+    e.preventDefault();
+    return false;
+}
+         });
+         profile_input.addEventListener("keypress",(e)=>{
+if(e.keyCode==32 && profile_input.value.length==0){
+    e.preventDefault();
+    return false;
+}
+         });
+         profile_input.addEventListener("keypress",(e)=>{if(e.keyCode==32 && profile_input.value==""){e.preventDefault(); return false;}});
+
+  </script>

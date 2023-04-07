@@ -1,0 +1,859 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+
+    <title>Registration</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700&family=Karla:wght@600&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+ 
+   <link rel="stylesheet" href="cropperjs/dist/cropper.min.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  </head>
+  <style>
+
+body{
+      color: white;
+      
+      padding: 0;
+      margin: 0;
+      
+      height: 100%;
+    
+    }
+    
+#nav-register-now{
+        width: 9rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-left: auto;
+  
+    background: #be6a15;
+    margin-right: 48px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+      }
+
+      #nav-register-now:hover{
+background: white;
+color: #002651;
+      }
+
+      #nav_logo button{
+        font-size: 2rem;
+        border: none;
+      }
+  
+    
+    .logo{
+     
+      font-size: 2.5rem;
+      margin-left: 0.8rem;
+      letter-spacing:0;
+      font-family: 'Karla', sans-serif;
+    
+    
+    }
+    
+    #bars{
+      font-size: 2.2rem;
+     
+      margin-top: -17px;
+            font-weight: 600;
+      
+    }
+    #xmark{
+    font-size: 3rem;
+    color: white;
+    margin-top: -9px;
+            font-weight: 600;
+    }
+    #menu {
+      
+    }
+    
+    #menu a{
+    font-size: 1.8rem;
+    
+    }
+    #menubar{
+      height: 3rem;
+      background-color:  #002651;
+      color: white;
+    
+    }
+    
+    #main-div{
+      margin-top: 12rem;
+      background-color: white;
+    
+    }
+    #register-card-div{
+      margin-top: 6.5rem;
+      font-family: 'Hanken Grotesk', sans-serif;
+    
+    }
+    
+    #register-card{
+     
+      border-radius: 0.5rem;
+      margin-top: 3rem;
+      padding: 1rem 3rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      background-color:  #002651;
+      height: 41rem;
+      font-family: 'Hanken Grotesk', sans-serif;
+      transition: all 0.25s ease 0s;
+
+    }
+    #register-card  h1{
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+      font-size: 2.5rem;
+     font-weight: 400;
+    
+    
+    
+      
+     
+    }
+    
+    
+    .ravi{
+      color: red;}
+      
+    
+      #login-card p{
+          font-size: 1.2rem;
+         
+          
+      }
+    
+    
+    #register-card input{
+      height: 4rem;
+    padding-left: 1rem;
+    background-color: white;
+    color: black;
+    margin-bottom: 2px;
+    width: 100%;
+    outline: none;
+}
+  
+    #register-card a{
+      color: black;
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
+    .two-section{
+      display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    }
+    #college-div{
+      background: white;
+        width: 50%;
+        padding: 1px;
+        display: flex;
+        margin: 1px;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        padding-right: 10px;
+    }
+  
+    
+    
+    #forget-section a{
+      color: white;
+      margin-top: 1.4rem;
+    }
+    #register-card button{
+      height: 4rem;
+        padding-left: 1rem;
+     
+        font-size: 2.2rem;
+        margin-top: 4ren;
+        background-color:  #be6a15;
+        margin-top: 1.2rem;
+        color: white;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-weight: 600;
+        height: 4rem;
+    }
+    
+    #submit_button:hover{
+      background-color: white;
+      color: #002651;
+    }
+    
+  
+    #below_signup{
+      color: white;
+      font-size: 1.6rem;
+    }
+    #footer{
+    height: 6rem;
+    background-color:  #002651;
+      font-size: 1.2rem;
+      padding-top: 1.7rem;
+      font-family: 'Hanken Grotesk', sans-serif;
+    }
+    
+    #form_inside{
+      display: flex;
+    flex-direction: column;
+}
+    
+    #inside_section_two{
+      align-items: center;
+        display: flex;
+    }
+    #menu{
+      margin-top: 2rem;
+    }
+    
+    
+    
+    
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+    /* Change the white to any color */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    input:-webkit-autofill{
+        -webkit-text-fill-color: black !important;
+    }
+    
+    input:-webkit{
+      -box-shadow: 0 0 0px 1000px white inset;
+    }
+    input{
+      caret-color: black;
+    }
+    .college-div{
+      background: white;
+        width: 50%;
+        padding: 1px;
+        display: flex;
+        margin: 1px;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        padding-right: 10px;
+    }
+    
+    #navabar_links a{
+    color: white;
+    visibility: visible;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+
+    #navabar_links a:hover{
+      color: #be6a15;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .nav-link{
+      font-size: 1.2rem;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+  
+ 
+    .navbar-brand{
+      font-size: 2.2rem;
+     
+    }
+    .navbar-brand:hover{
+      color: #be6a15;
+      font-weight: 800;
+    }
+   
+    .copyright{
+      font-weight: 400;
+    color:#be6a15;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-decoration: none;
+    text-decoration-style: none;
+   
+    }
+   
+    #footer a:hover{
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #be6a15;
+    }
+   
+ 
+    </style>
+    
+    
+    <style>
+      @media only screen and 
+    (min-width:750px ){
+      
+          #register-card-div{
+              padding-left:25%;
+              padding-right:25%;
+          }
+          #register-card h1{
+            font-size: 2.5rem;
+          }
+        
+          #register-card-div{
+            margin-top: 5rem;
+          }
+          #register-card button{
+                font-size: 1.8rem;
+          }#menubar{
+            height:3rem ;
+          }#bars,#xmark{
+            font-size: 1.5rem;
+            margin-top: -9px;
+            font-weight: 600;
+          }.logo{
+            font-size: 2.5rem;
+          }
+    }
+    </style>
+    
+<body>
+<!-- NOTE: Navbar -->
+
+<!-- <nav id="nav_bar" style=" position: fixed; width: 100vw;z-index: 2; font-family: 'Hanken Grotesk', sans-serif; background-color: #002651" class="navbar navbar-expand-lg navbar-dark">
+    <div id="nav_logo" class="container-fluid">
+      
+      <a class="navbar-brand" style=" background-color: ;" href="#campus-tree">Campus Tree </a>
+    
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""> <i class="fa-solid fa-bars" style="
+";
+"></i></span>
+      </button>
+      
+      <div  class="collapse navbar-collapse" id="nav-toggle">
+        <ul id="navabar_links"class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
+          <a  class="nav-link "href="/">Home</a>
+          <a class="nav-link "aria-current="page" href="/myprofile">Chellenges</a>
+          <a  class="nav-link" href="/chats">Hackthons</a>
+          <a  class="nav-link "  href="/">Chats/Communities</a>
+          <a  class="nav-link "aria-current="page" href="/myprofile">Find</a>
+          <a  class="nav-link" href="/chats">Log-out</a>
+         
+        </ul>
+      </div>
+     
+    </div>
+  </nav> -->
+
+    <nav id="nav_bar" style=" position: fixed; width: 100vw;z-index: 2; font-family: 'Hanken Grotesk', sans-serif; background-color: #002651" class="navbar navbar-expand-lg navbar-dark">
+        <div id="nav_logo" class="container-fluid">
+          
+          <a class="navbar-brand" style=" background-color: ;" href="#campus-tree">Campus Tree </a>
+          <div id="nav-register-now" style="
+      
+      "><a href="/login">
+      
+      Login
+    </a></div>
+          <button id="tgl_button" style="border: none; color: white; 
+          ";
+          " class="navbar-toggler collapsed me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> <i class="fa-solid fa-bars" ></i></span>
+          </button>
+          
+          <div  class="collapse navbar-collapse" id="nav-toggle">
+            <ul id="navabar_links"class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
+              <a  class="nav-link "href="/">Home</a>
+              <a class="nav-link " href="/challenges">Challenges</a>
+              <a  class="nav-link" href="/hackathon">Hackathons</a>
+              <a  class="nav-link"  href="/team">Teams</a>
+          
+            </ul>
+          </div>
+         
+        </div>
+      </nav>
+
+
+
+
+  
+
+<!-- Button trigger modal -->
+<!-- Modal another -->
+
+       
+
+
+
+    
+   
+
+<!-- Modal -->
+
+
+
+<div id="wrapper" class="flex flex-col justify-between h-screen">
+  
+
+  <div id="register-card-div" style="">
+    <div id="register-card" class="" style="
+
+">
+        <h1 class="o:text-3o text-o font-semibold  mb-6" style="
+
+"> Register</h1>
+        <p class="mb-2  text-o" style="
+color: white;
+"> Email or Username</p>
+        <form autocomplete="off" style="color: white;" action="/register" method="POST">
+          <div id="form_inside" class="block" style="
+          ">
+
+          
+<input autocomplete="false"   id="full_name_field" type="text"  name="full_name"  maxlength="50" placeholder="Full name"  class="" style="
+            
+">
+<input autocomplete="false"   type="text" id="user_id_field"  name="user_id"  maxlength="15" placeholder="User Id"  class="" style="
+            
+"> <!--6 to 12 user_id-->
+<input autocomplete="false"   type="email"  id="email" maxlength="30"  name="email" placeholder="Email"  class="" style="
+            
+">
+         
+          
+
+<div class="two-sections" style="align-items: center;
+          display: flex;">
+         
+         
+         <div class="college-div" style="
+       
+         ">
+             
+         <input autocomplete="false"   id="password_field" name="password" type="password" max-length="14" placeholder="Password "  class="" style="
+         
+         ">
+
+         <!--Password 6- 14-->
+         <i id="password_icon"    class="fa-solid fa-eye-slash" style="
+         color: black;
+         display: flex;
+         /* margin-top: 2rem; */
+         align-items: center;
+     "></i>
+             
+         </div>
+         <div class="college-div" style="
+         
+         ">
+             
+         <input autocomplete="false"   id="confirm_password_field" name="confirm_password" type="password" max-length="14" placeholder="Confirm password"  class="" style="
+         
+         ">
+         <i id="confirm_password_icon"  class="fa-solid fa-eye-slash" style="
+         color: black;
+         display: flex;
+         /* margin-top: 2rem; */
+         align-items: center;
+     "></i>
+             
+         </div>
+         
+         
+         
+          
+           </div>
+
+         <div id="inside_section_two" class="two-sections" style="">
+        
+        
+        <div  class="college-div" style="
+           
+        ">
+            
+        <input autocomplete="false"    id="city" name="city" type="text" maxlength="35" placeholder="City"  class="" style="
+        
+        ">
+        </div>
+        <div class="college-div" style="
+          
+        ">
+            
+        <input autocomplete="false"  id="college" name="college" type="text" max-length="100" placeholder="College" class="" style="
+        
+        ">
+            
+        </div>
+        
+        
+        
+         
+          </div>
+          
+
+
+
+           
+            
+             
+
+
+              
+             
+
+
+
+
+
+           </div>
+           
+         
+                <button id="submit_button" type="button"  class="w-full">Submit</button>
+                <p class="text-base " style="color: white;width: 100%;text-align: center;margin-top: 2%;font-size: 1.2rem;"> Registered? <a style="color:  #be6a15;" href="/login" class=""> Login</a></p>
+            </div>
+          
+            <div class="text-center mt-5 space-x-2">
+            </div>
+        </form>
+    </div>
+    
+    <!-- Footer -->
+
+    <div id="footer" class="text-center" style="">
+      © 2023 Copyright:
+<a class="copyright" href="/" style="
+">Campustree.com</a>
+    </div>
+</div> 
+
+
+
+<!--Response-->
+
+
+<!--Response-->
+
+
+<% if (status=='false' &&  title=='Email' ) { %>
+                        
+  <script >
+      console.log("<%= status%>");
+      console.log("<%= title%>");
+      alert('<%= message%>'); 
+      console.log("<%= message%>");
+      console.log("<%= message%>"=="Email Exist");
+      
+       email=document.getElementById("email");
+       full_name_field=document.getElementById("full_name_field");
+user_id_field=document.getElementById("user_id_field");
+ confirm_password=document.getElementById("confirm_password_field");
+ password=document.getElementById("password_field");
+college=document.getElementById("college");
+city=document.getElementById("city");
+      
+   email.style.border="3px solid #FF9494";     
+      //value assign
+      console.log("<%= user.email%>");
+      email.value= "<%= user.email%>";
+      full_name_field.value="<%= user.full_name%>";
+      user_id_field.value="<%= user.user_id%>";
+      //make password or confirm password to text type
+      password.type="text";
+      confirm_password.type="text";
+      password.value="<%= user.password%>";
+      confirm_password.value="<%= user.password%>";
+    city.value="<%= user.city%>";
+    college.value="<%= user.city%>"
+     
+   </script>
+<% } %>
+
+
+<% if (status=='false' && title=='Internal') { %>
+<script>
+    alert('<%= message%>'); 
+    </script>
+     
+  <% } %>
+
+
+
+
+  <% if (status=='false' &&  title=='username' ) { %>
+                      
+    <script defer>
+   
+        alert('<%= message%>'); 
+        
+        
+         email=document.getElementById("email");
+         full_name_field=document.getElementById("full_name_field");
+  user_id_field=document.getElementById("user_id_field");
+   confirm_password=document.getElementById("confirm_password_field");
+   password=document.getElementById("password_field");
+  college=document.getElementById("college");
+  city=document.getElementById("city");
+        
+     user_id_field.style.border="3px solid #FF9494";     
+        //value assign
+        console.log("<%= user.email%>");
+        email.value= "<%= user.email%>";
+        full_name_field.value="<%= user.full_name%>";
+        user_id_field.value="<%= user.user_id%>";
+        //make password or confirm password to text type
+        password.type="text";
+        confirm_password_field.type="text";
+        password.value="<%= user.password%>";
+        confirm_password.value="<%= user.password%>";
+      city.value="<%= user.city%>";
+      college.value="<%= user.city%>"
+       
+     </script>
+  <% } %>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://kit.fontawesome.com/1b26aa43df.js" crossorigin="anonymous"></script>
+
+
+  </body>
+
+
+</html> 
+
+
+<script>
+
+
+//toggle
+let register_card=document.getElementById("register-card");
+let tgl_button=document.getElementById("tgl_button");
+tgl_button.addEventListener("click",()=>{if(tgl_button.classList.contains("collapsed")){register_card.style.marginTop="3rem";}   else{register_card.style.marginTop="12rem"}   });
+
+//hide and show password
+let password=document.getElementById("password_field");
+  let confirm_password=document.getElementById("confirm_password_field");
+
+  let password_icon=document.getElementById("password_icon");
+   password_icon.addEventListener("click",()=>{
+     if(password.type=="password"){password.type="text";  password_icon.classList.remove("fa-eye-slash"); password_icon.classList.add("fa-eye");   }
+      else{password.type="password"; password_icon.classList.add("fa-eye-slash");   password_icon.classList.remove("fa-eye");  } });
+
+      
+      let confirm_password_icon=document.getElementById("confirm_password_icon");
+
+const user_id_field=document.getElementById("user_id_field");
+      
+   confirm_password_icon.addEventListener("click",()=>{
+     if(confirm_password.type=="password"){confirm_password.type="text";  confirm_password_icon.classList.remove("fa-eye-slash"); confirm_password_icon.classList.add("fa-eye");   }
+      else{confirm_password.type="password"; confirm_password_icon.classList.add("fa-eye-slash");   confirm_password_icon.classList.remove("fa-eye");  } });
+
+
+
+
+
+//validations
+
+const ValidateName=((name)=>{   //name should be 3 to 40
+
+//6 to 20
+   if(name.length>2 && name.length<=40){
+       return true;
+   }
+
+return false;
+})
+
+const ValidateEmail=((mail)=> 
+{
+if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))    //regex expression 
+{
+return true;
+}
+
+return false;
+});
+const ValidatePassword = (password) => {
+if (password && password.length > 5 && password.length < 13) {
+// password is valid
+return true;
+} else {
+// password is invalid
+return false;
+}
+};
+
+
+const cityValidate=((city)=>{
+if(city.length>2 && city.length<31){
+return true;
+}return false;
+})
+
+
+const collegeValidate=((college)=>{
+if(college.length>2 && college.length<75){
+return true;
+}return false;
+})
+
+
+const ValidateUserId=((user_id)=>{
+//6 to 12
+
+if(user_id.length>5 && user_id.length<13){
+return true;
+}return false;
+});
+//validate firstname and User Id
+
+//when user click on submit button
+const email=document.getElementById("email");
+const city=document.getElementById("city");
+const college=document.getElementById("college");
+const submit_button=document.getElementById("submit_button");
+submit_button.addEventListener("click",()=>{
+
+
+
+console.log("Hey!");
+//check first name and User Id
+//function se bhi kr skta tha
+//but 
+let input=document.getElementsByTagName("input");
+for(var i=0;i<input.length;i++){
+input[i].style.border="2px solid transparent";
+}
+if(ValidateName(full_name_field.value)){
+full_name_field.style.border="2px solid #d3d5d8" ;
+if(ValidateUserId(user_id_field.value)){
+user_id_field.style.border="2px solid #d3d5d8" ;
+if(ValidateEmail(email.value)){
+   email.style.border="2px solid #d3d5d8" ;
+if(ValidatePassword(password.value)){
+   password.style.border="2px solid #d3d5d8" ;
+   if(ValidatePassword(confirm_password.value)){
+      confirm_password.style.border="2px solid #d3d5d8" ;
+     if(confirm_password.value==password.value){
+       confirm_password.style.border="2px solid #d3d5d8" ;
+
+
+       password_field.style.border="2px solid #d3d5d8" ;
+
+
+
+       if(cityValidate(city.value)){
+       if(collegeValidate(college.value)){
+                submit_button.type="submit";
+       }else{
+         alert("Invaild college");
+         college.style.border="2px solid #d3d5d8";
+       }
+       }else{
+         alert("Invaild city");
+         city.style.border="2px solid #d3d5d8";
+
+       }
+      
+     }
+       //make button as type submit 
+else{
+confirm_password.style.border="3px solid #FF9494";
+password.style.border="3px solid #FF9494";
+//border: 3px solid indianred
+alert("Check confirm password");
+}
+   }
+   else{
+       confirm_password.style.border="1px solid #FF9494";
+   alert("confirm password should be 6 digit long");
+}
+}else{
+   password.style.border="1px solid #FF9494"; 
+   alert("password should be 6 digit long");
+}
+     
+}else{
+   email.style.border="1px solid #FF9494";
+   alert("Invalid Email or missing");
+}
+}
+else{
+user_id_field.style.border="3px solid #FF9494";
+alert("User Id should be 6 digits long  ");
+}
+}
+else{
+full_name_field.style.border="2px solid #FF9494" ;
+alert("First name should be 3 digits long or should be a name");   
+}
+})
+
+
+
+
+//click on submit button
+college.addEventListener("keypress",(e)=>{if(e.keyCode==13){submit_button.click();}else if(e.keyCode>64 && e.keyCode<91 || e.keyCode >96 && e.keyCode<123 ||e.keyCode==32){  }else{e.preventDefault();return false;}});
+
+
+user_id_field.addEventListener("keypress",(e)=>{console.log(e);if(e.keyCode==32){e.preventDefault(); false;}});
+full_name_field.addEventListener("keypress",((e)=>{ if(e.keyCode>64 && e.keyCode<91 || e.keyCode >96 && e.keyCode<123 ||e.keyCode==32){  }else{e.preventDefault();return false;} }));
+city.addEventListener("keypress",((e)=>{ if(e.keyCode>64 && e.keyCode<91 || e.keyCode >96 && e.keyCode<123 ||e.keyCode==32){  }else{e.preventDefault();return false;} }));
+college.addEventListener("keypress",((e)=>{  }));
+
+
+
+full_name_field.addEventListener("keypress",(e)=>{if(e.keyCode==32 && full_name_field.value==""){ e.preventDefault();  return false;}});
+password.addEventListener("keypress",(e)=>{if(e.keyCode==32){
+e.preventDefault();
+return false;
+}});
+// confirm_password_field.addEventListener("keypress",(e)=>{if(e.keyCode==32){
+//   e.preventDefault();
+//   return false;
+// }});
+email.addEventListener("keypress",(e)=>{if(e.keyCode==32){
+e.preventDefault();
+return false;
+}});
+
+city.addEventListener("keypress",(e)=>{if(e.keyCode==32 && city.value==""){
+e.preventDefault();
+return false;
+}});
+
+college.addEventListener("keypress",(e)=>{if(e.keyCode==32 && college.value==""){
+e.preventDefault();
+return false;
+}});
+
+</script>

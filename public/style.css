@@ -1,0 +1,28 @@
+.color{
+    background-color: rgb(3, 8, 14);
+}
+.c2{
+    color: aliceblue;
+}
+.s1{
+    padding-top: 20px;
+}
+.pd{
+    padding-top: 20px;
+}
+#team{
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 

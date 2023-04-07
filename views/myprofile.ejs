@@ -1,0 +1,1428 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+
+    <title>My Profile</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700&family=Karla:wght@600&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="cropperjs/dist/cropper.min.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  
+  
+  <style>
+
+/* 000000 FFFFFF E18A07 C0C0C0 */
+
+body, html{
+  height: 100%;
+  }
+  body{
+  margin: 0
+  }
+
+    
+    .navbar{
+      background-color: white;
+    }
+    
+    
+    /* NOTE: Cover */
+    .profile-row{
+    margin-right:0;
+    }
+  
+    .cover {
+      text-align: center;
+      
+      border-radius: 0.5rem;
+      margin-left: 7rem;
+      margin-top: 2rem;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    
+    #cover-img{
+      width: 100%;
+      border-radius: 0.5rem;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  
+   #cover-file,#profile-file{
+   
+  color: blue;
+   border: 0.1rem solid white;
+   border-radius: 0.2rem;
+   -webkit-border-radius: 0.2rem;
+   -moz-border-radius: 0.2rem;
+   -ms-border-radius: 0.2rem;
+   -o-border-radius: 0.2rem;
+   width: 6.2rem;
+}
+
+ .cover-edit-btn{
+  margin-top: -12%;
+  
+  margin-right: -95%;
+    border: none;
+    outline: none;
+   
+ }
+
+  .cover-edit-icon{
+    color:white;
+   padding: 0%;
+    
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+ 
+  
+    /* NOTE: Profile */
+    .pic-name-col{
+      text-align: center;
+      width: 10rem;
+      margin: 1rem;
+      border: none;
+    
+    }
+    .profile-row-under{
+      max-width: 60rem;
+      border-radius: 0.5rem;
+      margin: 0;
+      padding: 0;
+      margin-left: 7rem;
+      margin-top: 0.5rem;
+      border: 0.1rem solid #C0C0C0;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      margin-bottom: 1rem;
+    
+    
+    }
+    .profile-img{
+      border-radius: 50%;
+      max-width: 10rem;
+     
+      border: 4px solid #be6a15;
+    
+    }
+  
+
+
+    .profile-edit-icon{
+
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+   
+    }
+    .name{
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: white;
+      margin: 0;
+      padding: 0;
+      margin-left: 2rem;
+    }
+    .college-field-col{
+    padding: 0;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-left: 4rem;
+    }
+    
+    .field{
+      font-size: 1rem;
+      font-weight: 500;
+    
+    
+    }
+    .college{
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    .skills-div{
+      width: 14rem;
+    }
+    .skill{
+      background-color: #c0c0c0;
+      border-radius: 0.2rem;
+      padding: 0.4rem;
+      color: white;
+      text-align: center;
+      margin: 0.2rem;
+      display: inline-block;
+    }
+    
+    /* NOTE: About div */
+    .about-div{
+      background-color: #c0c0c0;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      margin-top: 1rem;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    
+    .chellenges-col{
+      margin-top: 2rem;
+      border-radius: 0.5rem;
+      border: 0.1rem solid #c0c0c0;
+      height: 35rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align: center;
+    }
+    
+    .chellenges-profile-col{
+      text-align: center;
+      background-color: #c0c0c0;
+      border-radius: 0.5rem;
+      border: 0.2rem solid White;
+      margin: 0.2rem;
+    }
+    .chellenge-profile-name{
+      font-weight: 300;
+      font-size: 1rem;
+    }
+    
+    .chellenge-profile-img{
+      border-radius: 50%;
+      max-width: 5rem;
+      border: 0.1rem solid #C0C0C0;
+    }
+    
+    
+    .friends-number-link{
+      text-decoration: none;
+      font-size: 1rem;
+    
+    }
+    .chellenge-follow-btn{
+      border-radius: 0.5rem;
+      background-color:  #E18A07;
+      padding: 0rem 0.5rem;;
+    }
+    
+
+
+
+    
+
+    .f-icon{
+      font-size:1.8rem;
+      text-decoration: none;
+    }
+
+
+    .copyright{
+      text-decoration: none;
+    }
+.my-5{
+  margin: 0;
+}
+.footer-features a{
+  text-decoration: none;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: #be6a15;
+
+}
+
+
+
+.card-box {
+  padding: 2px;
+  border-radius: 1rem;
+  margin-bottom: 3px;
+  background-color: #fff;
+  border: 0.5rem transparent;
+
+}
+
+.social-links li a {
+  border-radius: 50%;
+  color: rgba(121, 121, 121, .8);
+  display: inline-block;
+  height: 20px;
+  line-height: 5px;
+  border: 2px solid rgba(121, 121, 121, .5);
+  text-align: center;
+  width: 20px
+}
+
+.social-links li a:hover {
+  color: #797979;
+  border: 2px solid #797979
+}
+.thumb-lg {
+  height: 50px;
+  width: 50px;
+}
+.img-thumbnail {
+  padding:2px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: auto;
+}
+.text-pink {
+  color: #ff679b!important;
+}
+.btn-rounded {
+  border-radius: 2em;
+}
+.text-muted {
+  color: #98a6ad!important;
+}
+h4 {
+  line-height: 10px;
+  font-size: 12px;
+}
+
+
+.chellenges-profile-container{
+  overflow: auto;
+  white-space: nowrap;
+  max-width: 100%;
+  padding: 4rem 4rem;
+ 
+}
+    </style>
+    
+    <style>
+body{
+    background-color: white
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.card {
+ 
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  
+}
+
+.title {
+  color:#be6a15;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+      .nav-link{
+        font-size: 1rem;
+        color: white;
+        
+      }
+      .active{
+        color: #be6a15;
+      }
+
+      .card-box {
+padding: 2px;
+border-radius: 1rem;
+margin-bottom: 3px;
+
+
+background-color: #002651;
+    color: white;
+}
+
+.social-links li a {
+border-radius: 50%;
+color: rgba(121, 121, 121, .8);
+display: inline-block;
+height: 20px;
+line-height: 5px;
+border: 2px solid rgba(121, 121, 121, .5);
+text-align: center;
+width: 20px
+}
+
+.social-links li a:hover {
+color: #797979;
+border: 2px solid #797979
+}
+.thumb-lg {
+height: 50px;
+width: 50px;
+}
+.img-thumbnail {
+padding:2px;
+background-color: #fff;
+border: 1px solid #dee2e6;
+border-radius: .25rem;
+max-width: 100%;
+height: auto;
+}
+.text-pink {
+color: #ff679b!important;
+}
+
+.text-muted {
+color: #98a6ad!important;
+}
+
+.content h4 {
+line-height: 10px;
+font-size: 12px;
+}
+
+
+.chellenges-profile-container{
+overflow: auto;
+white-space: nowrap;
+width: 100%;
+padding: 1rem;
+
+}
+.chellenges-profile-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.pbox{
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  margin: 0.5rem;
+}
+
+
+
+.pimgdiv{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 3rem;
+  height:3rem;
+ margin-bottom: 1rem;
+}
+.pimg{
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+.creategroup,.groupname{
+  margin-left: 93%;
+}
+
+
+
+#nav_bar{
+    background-color: #002651;
+}
+#navabar_links a{
+    text-align: center;
+    font-size: 1.3rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: white;
+  margin-right: 0.5rem;
+  display: flex;
+}
+.navbar-brand{
+  font-size: 2.5rem;
+font-family: 'Karla', sans-serif;
+
+}
+
+#nav_logo button{
+    font-size: 2.5rem;
+    color: white;
+    border: 0;
+}
+#main_row{
+    background-color:white;
+    font-family: 'Hanken Grotesk', sans-serif;
+    transition: all 0.3s ease 0s;
+   
+}
+
+#main_row_inside{
+    margin: 0; 
+    display: grid;
+    align-content: center;
+    background: #002651;
+    border-radius: 5px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  padding: 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+#cover_menu{
+    width: 100%;
+   
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+} 
+
+
+#cover_menu button{
+    margin-left: -2rem;
+    color: white;
+}
+#cover_menu img{
+    height: 8rem;
+    width: 100%;
+    border: 0;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+   
+}
+
+#about_div{
+    background-color: #be6a15;
+    height: 5rem;
+    padding-top: 3px;
+    color: #002651;
+    margin-top: 3rem;
+    border: 5px solid #002651;
+    min-height: 6rem;
+    height: max-content;
+    padding-left: 1rem;
+}
+#about_data_h3{
+ font-size: 1.2rem;
+}
+#about_div h4{
+    color: #002651;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 8px;
+    margin-top: 2px;
+    font-size: 1.4rem;
+}
+#name_div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 6%
+}
+
+
+#profile_pic_div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+#profile_pic_div i{
+
+  margin-top: -2rem;
+    margin-left: 3.4rem;
+    font-size: 1.5rem;
+    color: white;
+
+}
+#name_div {
+
+color: white;
+font-size: 1.3rem;
+
+}
+
+
+
+#personal_details{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: stretch;
+    line-height: 0.4;
+    flex-wrap: nowrap;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    gap: 25px;
+}
+
+#sills_div{
+    gap: 11px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    flex-wrap: wrap;
+    align-items: stretch;
+    line-height: 0;
+}
+#main_section{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 7rem;
+    
+}
+#challenges_div{
+    height: 46rem;
+    overflow-y: scroll;
+    
+padding: 0;
+background: #be6a15;
+border: none;
+margin: 0;
+margin-top: 2rem;
+font-family: 'Hanken Grotesk', sans-serif;
+
+
+}
+
+#challenges_card{
+    border-radius: 0.5rem;
+    margin: 5px;
+    border: white;
+    border-bottom: 5px solid #002651;
+    outline: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+#card_header{
+    font-size: 2.2rem;
+    background-color: white;
+    display: flex;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    height: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+#challenges_img{
+    background-color: #1d2733;
+}
+#challenges_content{
+    background-color: #002651;
+}
+#join_btn{
+    background: #be6a15;
+    color: white;
+    width: 9rem;
+    height: 4rem;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#profiles_div{
+    
+    padding: 0;
+    margin: 0;
+    margin-top: 4rem;
+    border-radius: 1rem;
+   
+    padding-bottom: 2rem;
+    overflow-x: scroll;
+
+}::-webkit-scrollbar{
+    display: none;
+}
+
+#profiles{
+    margin: 0;
+}
+.card-box{
+    
+
+}
+.pimg{
+    width: 4rem;
+    height: 4rem;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+
+.view_btn{
+    background-color: white;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#footer{
+    height: 6rem;
+    width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+background-color: #002651;
+margin-top: 4rem;
+}
+#main_row_inside{
+    display: grid;
+  }
+  #cover-name{
+    position: absolute;
+    color: white;
+    top: 7.5rem;
+    left: 5%;
+    font-size: 2.2rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+
+  }
+  #nav-register-now{
+        width: 9rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-left: auto;
+  
+    background: #be6a15;
+    margin-right: 48px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+      }
+
+     #nav-register-now:hover{
+
+color: #002651;
+font-weight: 800;
+border: 3px solid white;
+      }
+
+      #nav_logo button{
+        font-size: 2rem;
+        border: none;
+      }
+      
+  #navabar_links a{
+    color: white;
+    visibility: visible;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+
+    #navabar_links a:hover{
+      color: #be6a15;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .nav-link{
+      font-size: 1.2rem;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+  
+ 
+    .navbar-brand{
+      font-size: 2.2rem;
+     
+    }
+    .navbar-brand:hover{
+      color: #be6a15;
+      font-weight: 800;
+    }
+   
+    .copyright{
+      font-weight: 400;
+    color:#be6a15;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-decoration: none;
+    text-decoration-style: none;
+   
+    }
+   
+    #footer a:hover{
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #be6a15;
+    }
+   #chat-icon{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-right: 2rem;
+   }
+   #chat-icon:hover{
+    font-size: 2.2rem;
+    color: #be6a15;
+   }
+@media only screen and 
+(min-width:760px ){
+
+  #cover-name{
+    top: 8.3rem;
+    left: 3.2%;
+  }
+  #cover_menu button{
+margin-left: -3rem;
+
+  }
+
+  #main_row_inside{
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+  #challenges_div{
+    height: 33rem;
+    overflow-y: scroll;
+    
+padding: 0;
+margin: 0;
+border-bottom-left-radius: 0.5rem;
+    /* border-bottom: 4px solid rgb(25,162,205); */
+    border-bottom-right-radius: 0.5rem;
+}
+
+}
+#main_row_inside{
+  background-color: white;
+
+}
+#pic_details{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 2rem;
+    color: white;
+    background: no-repeat;
+    justify-content: start;
+    background: #002651;
+    align-content: stretch;
+    align-items: center;
+    height: 19rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+#about_div{
+  margin-top: 0;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+}
+    </style>
+  </head>
+<body >
+<!-- NOTE: Navbar -->
+
+<nav id="nav_bar" style=" position: fixed; width: 100vw;z-index: 2; font-family: 'Hanken Grotesk', sans-serif; background-color: #002651" class="navbar navbar-expand-lg navbar-dark">
+    <div id="nav_logo" class="container-fluid">
+      
+      <a class="navbar-brand" style=" background-color: ;" href="#campus-tree">Campus Tree </a>
+     
+    <a style="color: white; text-decoration: none;" href="/announcement"> <div id="nav-register-now" style="
+  
+  "> Announcement</a></div>
+ 
+
+  <a href="/chats">
+    <i id="chat-icon" class='far fa-comment-dots'>
+    </i>
+  </a>
+ 
+      <button id="tgl_button" style="border: none; color: white; 
+      ";
+      " class="navbar-toggler collapsed me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="">
+           <i class="fa-solid fa-bars" ></i></span>
+      </button>
+      
+      <div  class="collapse navbar-collapse" id="nav-toggle">
+        <ul id="navabar_links"class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
+          <a  class="nav-link "href="/">Home</a>
+         
+          
+          <a  class="nav-link"  href="/edit-profile">Edit-profile</a>
+          <a class="nav-link " href="/allUser">AllUsers</a>
+          <a  class="nav-link"  href="/logout">Logout</a>
+      
+        </ul>
+      </div>
+     
+    </div>
+  </nav>
+ 
+
+
+
+
+  <section id="main_section" class="story-section bg-gray-800 w-screen h-screen flex justify-center items-center" style="">
+    <div id="main_row"  class="row profile-row" style="
+        /* padding: 0 4rem; */
+        /* padding: 12px; */
+    ">
+      <div id="main_row_inside"  class="col-md-8 col-cover" style="
+        /* margin: 0; */
+        /* padding: 0; */
+        /* margin-top: 2rem; */
+      
+        align-content: center;
+    ">
+        <div id="cover_menu" class="cover" style="
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        /* height: 12rem; */
+    ">
+    <div id="cover-name" style="
+   
+">
+  <%=fullname%>
+    </div>
+
+          <img id="cover-img" src="./images/ProfileCover.png" alt="" 
+       >
+    
+       
+        </div>
+
+ 
+        <div id="upper_profile">
+
+          <div id="pic_details" >
+
+            <div id="profile_pic_div">
+            <img class="profile-img" src="<%=profile_image%>" alt="" style="height: 150px; border-radius: 50%;">
+            <i id="spinner_icon" class="fa-solid fa-spinner fa-spin fa-2xs" style="color: white;font-size: 3rem;margin-bottom: 1rem; display: none;    color: white;
+            font-size: 3rem;
+            margin-left: 0.4rem;
+            margin-bottom: 1rem;
+           "></i>
+           <div id="name_div"><%=fullname%>
+          <h6>
+            @<%=userid%>
+          </h6>
+          </div>
+           
+           <button id="change_profile_button" style="margin-right: -3rem;
+               margin-top: -4.5rem  " type="button" class="btn profile-edit-btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop" accept="image/*">
+              <i class="fa-solid fa-pen-to-square  profile-edit-icon"></i>
+            </button>
+        </div>
+
+            
+            <div id="personal_details">
+               <div>
+                <p><%=college%></p>
+             <p><%=city%></p>
+             
+             
+
+             <!-- <span>Score:</span>500</p> -->
+            </div>
+            <div id="sills_div">
+
+
+              <% for(var i=0;i<interest.length;i++){ %>
+                <div style="background-color: #be6a15;border-radius: 0.2rem;padding: 0.4rem;color: white;text-align: center;margin: 0.2rem;display: inline-block;height: 2rem;display: flex;align-items: center;justify-content: center;">
+                  <%=interest[i]%>
+                  <input name="interest[]" style="display: none;">
+                </div>
+                <%} %>
+          
+          
+              
+              </div>
+
+            </div>
+          
+          </div>
+
+      
+        <div id="about_div"  >
+          <h4 style=""class="about-heading">About</h4>
+        <div style="";">
+<h3 id="about_data_h3" style="color: white;
+">
+<%=about%>
+</h3>
+          
+        </div>
+          
+        </div>
+        </div>
+        
+
+
+
+
+
+
+      </div>
+    
+    
+    
+    
+    
+      <!-- Chellenges Baar at the Right side of Profile section      1 -->
+      <div id="challenges_div" style="" class="col-md-4 chellenges-col container scrol">
+       
+        
+        
+       
+
+     
+    <!-- Chellenges Baar at the Right side of Profile section      2-->
+     
+    
+    
+    
+    
+     
+    <!-- End of all 3 Chellenges baar chellenge will be fetched from DB -->
+    </div>
+    
+    <!-- End of Profile  -->
+    
+    
+    
+    
+    
+    <!-- Start of challenges Profile Recomendations -->
+    <div id="profiles_div" class="content">
+      <div id="profiles" class="chellenges-profile-container" style="/* margin-left: 3%; */padding: 1rem;">
+        <!--Profiles-->
+    
+    
+    
+            
+       
+       
+          <!-- <div class="pbox">
+   
+      <div class="text-center card-box">
+        <div class="number-card pt-2 pb-2">
+          <div class="thumb-lg number-thumb mx-auto pimgdiv">
+            <img class="pimg" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"></div><div>
+              <h4 id="fname"> Pratham</h4>
+              <h4 id="fcollege">@jasj</h4>
+              <p id="field">jajsjj</p></div>
+              <button class="btn view_btn" onclick="seeProfile('jasj')">view profile</button><p><span></span></p>
+              <p>score:0</p><p></p></div></div></div></div>
+     -->
+     
+      <!-- container -->
+    </div>
+    
+    </div>
+   
+    </section>
+    <div id="footer" class="text-center" style=" color: white; font-size: 1.3rem;">
+        © 2023 Copyright:
+    <a class=" copyright" href="/" style="
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-weight: 400;
+      color: #be6a15;
+      font-size: 1.2rem;
+      margin-left: 5px;
+      margin-bottom: -7px;
+    ">Campustree.com</a>
+      </div>
+
+<!-- Button trigger modal -->
+<!-- Modal another -->
+
+       
+
+
+
+    
+   
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close cross" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body dialog-body">
+        <input type="file" name="" id="profile-file" accept="image/png,image/jpeg,image/jpg">
+        <!-- <input type="file" name="" id="profile-file"  accept="image/png image/jpeg image/jpg"> -->
+        <div class="box-2">
+          <div class="result"></div>
+          </div>
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close-name" data-bs-dismiss="modal" style="display: none;">Close</button>
+        <button type="button" class="btn  profile-done" data-bs-dismiss="modal">Update Profile file</button>
+        <!-- <button type="button" class="btn view_btn profile-done" data-bs-dismiss="modal">Profile-Done</button> -->
+
+
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://kit.fontawesome.com/1b26aa43df.js" crossorigin="anonymous"></script>
+<script src="cropperjs/dist/cropper.min.js"></script>
+
+  </body>
+  
+
+  <script >
+
+
+/*
+tgl btton
+
+*/
+let tgl_button=document.getElementById("tgl_button");
+
+let main_row=document.getElementById("main_row");
+tgl_button.addEventListener("click",()=>{if(tgl_button.classList.contains("collapsed")){main_row.style.marginTop="0rem";}   else{main_row.style.marginTop="14rem"}   });
+
+   const coverImage=document.getElementById("cover-img");
+    const coverFile=document.getElementById("cover-file");
+    const nav_toggle=document.getElementById("nav-toggle");
+    const profileFile=document.getElementById("profile-file");
+    const done=document.getElementsByClassName("done")[0];
+    const cropingImage=document.getElementById("croping-image");
+    const cropingImage2=document.getElementById("croping-image2");
+    const result=document.getElementsByClassName("result")[0];
+    const profileImage=document.getElementsByClassName("profile-img")[0];
+    const coverIcon=document.getElementsByClassName("cover-edit-icon")[0];
+    const profileIcon=document.getElementsByClassName("profile-edit-icon")[0];
+    //button
+    const profileDone=document.getElementsByClassName("profile-done")[0];
+    const cross=document.getElementsByClassName("cross")[0];
+    const close=document.getElementsByClassName("close-name")[0];
+    cropper="";
+   
+
+   
+   
+profileFile.addEventListener("change", (e) => {
+  if (e.target.files.length) {
+    // start file reader
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      if (e.target.result) {
+        // create new image
+        let img = document.createElement("img");
+        img.id = "croping-image2";
+        img.onload = () => {
+          // set a fixed width for the image
+          const width = 500;
+          const height = img.height * (width / img.width);
+          img.width = width;
+          img.height = height;
+          // clean result before
+          result.innerHTML = "";
+          // append new image
+          result.appendChild(img);
+          // init cropper
+          cropper = new Cropper(img, {
+            dragMode: 'move',
+            aspectRatio: 1,
+            autoCropArea: 1,
+            restore: false,
+            guides: false,
+            center: false,
+            highlight: false,
+            cropBoxMovable: true,
+            cropBoxResizable: false,
+            toggleDragModeOnDblclick: true,
+            movable: false,
+            zoomOnTouch: false,
+          });
+        };
+        img.src = e.target.result;
+      }
+    };
+    reader.readAsDataURL(e.target.files[0]);
+  }
+});
+
+ 
+    let loader_icon=document.getElementById("spinner_icon");
+    let change_profile_button=document.getElementById("change_profile_button");
+
+    profileDone.addEventListener("click", async(e) => {
+      e.preventDefault();
+      change_profile_button.style.display="none";
+      loader_icon.style.display="block";
+      // get result to data uri
+      let imgSrc = cropper
+        .getCroppedCanvas()
+        .toDataURL();
+       
+        let data={
+          url_data:imgSrc
+         }
+
+         //animation
+         
+         
+         const request=await fetch("http://localhost:3000/upload_profile",{
+          method:"POST",
+          headers:{
+            "Content-Type":"application/json",
+          },
+          body:JSON.stringify({url_data:imgSrc})
+         })
+         
+
+         .then((res)=>{
+           return res.json();
+         }).then((data)=>{
+          loader_icon.style.display="none";
+          change_profile_button.style.display="block";
+     
+           alert("Profile photo Updated :)");
+          profileImage.src= imgSrc;
+          
+          profileImage.style.border="1px transparent";
+           console.log(data);
+         }).catch((err)=>{
+          loader_icon.style.display="none";
+          change_profile_button.style.display="block";
+          alert("Upload failed try again later");
+          console.log(err);
+
+         })
+        
+        
+    });
+    
+
+   
+   
+   
+   
+   
+    
+    
+ const fun1=()=>{
+console.log("hello");
+ }
+
+ window.onload = async()=>{
+    // your code here
+console.log("okay");
+
+//const response0=await fetch("https://localhost:3000/")
+
+
+
+    const response = await fetch("http://localhost:3000/other_profile", {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+       headers: {
+        'Content-Type': 'application/json'
+
+       },
+
+        // body data type must match "Content-Type" header
+    }).then((Response)=>{
+      return Response.json();
+    }).then((data)=>{
+      console.log(data);
+
+let profiless=document.getElementById("profiles");
+
+
+data.forEach((data,n)=>{
+
+
+  let pbox=document.createElement("div");
+  pbox.setAttribute("class","pbox");
+  profiless.appendChild(pbox);
+  user_id=data.user_id.toString();
+console.log(data.user_id.toString());
+pbox.innerHTML+=`
+   
+      <div class="text-center card-box">
+        <div class="number-card pt-2 pb-2">
+          <div class="thumb-lg number-thumb mx-auto pimgdiv">
+            <img class="pimg" src=${data.profile_image}></div><div>
+              <h4 id="fname"> ${data.fullname}</h4>
+              <h4 id="fcollege">@${data.user_id}</h4>
+              <p id="field">${data.college}</p></div>
+              <button style="background-color: #be6a15" class="btn view_btn"  onclick="seeProfile('${user_id}')" >view profile</button><p><span></span></p>
+              <p>score:0</p><p></p></div></div>`;
+                
+            });
+          })
+
+
+    const response3=await fetch("http://localhost:3000/show_challenges",{
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+       headers: {
+        'Content-Type': 'application/json'
+
+       },
+
+       
+    }).then((Response)=>{
+      return Response.json();
+    }).then((data)=>{
+      console.log(data);
+
+
+      data.forEach((ele)=>{
+  ele.challenges_detail.forEach((element)=>{
+
+    let challenges_div=document.getElementById("challenges_div");
+    
+    let new_ele=` <div id="challenges_card" class="card" style="
+      border-radius: 0.5rem;
+      border: 3px solid darkgrey;
+      padding: 5p;
+      margin: 5px;
+      border: white;
+      border-bottom: 5px solid #002651;
+   ">
+  
+      
+       <div id="challenges_content" class="content" style="
+       border: none;
+   ">
+         <a href="#" style="
+       text-decoration: none;
+   ">
+           <span class="title" style="
+       font-size: 1.6rem;
+       font-weight: 1000;
+       font-family: 'Hanken Grotesk', sans-serif;
+   ">
+   ${element.challenge_name}
+           </span>
+         </a>
+     
+         <p class="desc" style="
+       font-size: 1.2rem;
+       color: white;
+       font-weight: 500;
+       font-family: 'Hanken Grotesk', sans-serif;
+   ">
+   ${element.description}
+         </p>
+     
+         <a id="join_btn" href="${element.link}" class="action">
+           Join Now
+           <span aria-hidden="true">
+             →
+           </span>
+         </a>
+       </div>
+     </div>`;
+
+
+     challenges_div.innerHTML+=new_ele;
+  });
+
+
+});
+    
+    
+    });      
+    
+};
+const seeProfile=((userId)=>{
+//post requests
+
+
+console.log(userId);
+ window.location.href= "/user/"+userId;
+  
+});
+
+
+
+
+
+
+    </script>
+
+
+</html> 

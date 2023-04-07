@@ -1,0 +1,741 @@
+<html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=0.6">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="hstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Cinzel&family=Montserrat:wght@100&family=Mukta:wght@200&family=Rokkitt:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+<style>
+
+body{
+  color: white;
+  
+  padding: 0;
+  margin: 0;
+  
+  height: 100%;
+
+}
+
+
+.logo{
+ 
+  font-size: 2.6rem;
+  
+  margin-left: 0.8rem;
+  letter-spacing:0;
+  font-family: 'Alkatra', cursive;
+
+}
+
+#bars{
+  font-size: 3rem;
+ 
+  
+}
+#xmark{
+font-size: 3rem;
+color: white;
+}
+#menu a{
+font-size: 2rem;
+
+}
+#menubar{
+  height: 6rem;
+  background-color: #002651;
+  color: white;
+
+}
+
+#main-div{
+  margin-top: 12rem;
+  background-color: white;
+
+}
+
+#login-card{
+ 
+  border-radius: 2rem;
+  margin-top: 15rem;
+  padding: 1rem 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: #002651);
+
+
+}
+#login-card  h1{
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+ 
+}
+
+
+.ravi{
+  color: red;}
+
+  #login-card p{
+      font-size: 1.2rem;
+      
+  }
+
+#login-card input{
+ height: 4rem;
+ padding-left:1rem;
+ background-color: white;
+color:black;
+margin-bottom: 2px;
+
+
+
+}
+
+#forget-section a{
+  color: white;
+  margin-top: 1.4rem;
+}
+#login-card button{
+ height: 4rem;
+ padding-left:1rem;
+ background-color: white;
+color:white;
+font-size: 2.2rem;
+margin-top: 1rem;
+background-color: rgb(21, 26, 27);
+
+}
+
+
+
+
+#submit_button{
+  margin-top: 3rem;
+  height: 5rem;
+  background-color: white;
+  font-size: 2.6rem;
+ padding-bottom: 1px;
+ font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+
+
+}
+
+
+
+#below_signup{
+  color: white;
+  font-size: 1.6rem;
+}
+#footer{
+height: 6rem;
+background-color: #002651;
+  font-size: 1.6rem;
+  padding-top: 1.7rem;
+
+ 
+  width: 100%;
+
+}
+
+
+
+</style>
+
+
+
+
+<!-- search style -->
+<style>
+      
+  .loader-container {
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -4%;
+}
+
+.fa-spinner {
+ color: #002651;
+ font-size: 60px;
+}
+
+ 
+
+       .search-container {
+ display: flex;
+margin-top: 8.5rem;
+   justify-content: center;
+   width: 100%;
+   padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  transition: all 0.3s ease 0s;
+   
+}
+
+.search-container input[type="text"] {
+  padding: 29px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 26px;
+  width: 100%;
+  /* background-color: white; */
+  outline: none;
+  border: 3px solid #002651;
+  color: black;
+}
+
+.search-container button {
+  padding: 17px;
+  padding: 18px 23px;
+  /* margin-bottom: 19px; */
+  border-radius: 0 5px 5px 0;
+  background-color: #002651;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: -1px;
+  width: 4rem;
+    height: 7rem;
+    cursor: pointer;
+
+}
+
+.search-container button:hover {
+ background: #be6a15;
+ font-size:2rem ;
+}
+
+
+.thumb-lg {
+       height: 50px;
+       width: 50px;
+       }
+       .img-thumbnail {
+       padding:2px;
+       background-color: #fff;
+       border: 1px solid #dee2e6;
+       border-radius: .25rem;
+       max-width: 100%;
+       height: auto;
+       }
+       .text-pink {
+       color: #181415!important;
+       }
+       
+       .text-muted {
+       color: #98a6ad!important;
+       }
+       
+       .content h4 {
+       line-height: 10px;
+       font-size: 12px;
+       }
+
+
+       .pbox{
+ display: inline-block;
+ width: 15rem;
+ height: 15rem;
+ margin: 0.5rem;
+ margin-top: 4%
+}
+
+
+
+.pimgdiv{
+ border-radius: 50%;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ -o-border-radius: 50%;
+ width: 3rem;
+ height:3rem;
+margin-bottom: 1rem;
+}
+.pimg{
+ border-radius: 50%;
+ width: 3rem;
+ height: 3rem;
+}
+.creategroup,.groupname{
+ margin-left: 93%;
+}.no_found{   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 3%;
+   font-size: 2rem
+}
+
+
+#profile{
+   gap: 5.5%;
+   display: flex;
+   
+   justify-content: center;
+   width:100%;
+   background-color: white;
+   
+   flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+
+
+}
+#profiless{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #002651;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+
+}
+#main_content{
+  min-width: 12rem;
+  max-width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    padding-left: 3px;
+}
+
+#image-div{
+
+max-height: 6rem;
+  min-width: 6rem;
+  border: 5px solid white;
+  text-align: center;
+  display: flex;
+  border-radius: 50%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+
+}
+
+#image-div img{
+min-width: 5.5rem;
+  max-height: 5.5rem;
+  border-radius: 50%;
+}
+#button-div button{
+background-color: white;
+color:black;
+width: 9rem;
+height: 3rem;
+font-size: 1.1rem;
+font-weight: 600;
+}
+
+#details-div{
+font-size: 1.3rem;
+
+}
+
+#icon{
+
+
+
+display: block;
+    display: flex;
+    margin-top: -9%;
+}
+
+
+
+@media only screen and 
+(min-width:800px ){
+  #main_content{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+    min-height: 9rem;
+  
+}
+#all-profiles-out{
+  padding: 1rem 15%;
+}
+#profiless{
+  gap: 3rem;
+  display: flex;
+    gap: 3rem;
+    flex-direction: row;
+    justify-content: center;
+}
+}
+#nav-register-now{
+        width: 9rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-left: auto;
+    background: #be6a15;
+    margin-right: 48px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+      }
+
+      #nav-register-now:hover{
+background: white;
+color: #002651;
+      }
+
+      #nav_logo button{
+        font-size: 2rem;
+        border: none;
+      }
+      #navabar_links a{
+    color: white;
+    visibility: visible;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+
+    #navabar_links a:hover{
+      color: #be6a15;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .nav-link{
+      font-size: 1.2rem;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+  
+ 
+    .navbar-brand{
+      font-size: 2.2rem;
+     
+    }
+    .navbar-brand:hover{
+      color: #be6a15;
+      font-weight: 800;
+    }
+   
+    .copyright{
+      font-weight: 400;
+    color:#be6a15;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-decoration: none;
+    text-decoration-style: none;
+   
+    }
+   
+    #footer a:hover{
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #be6a15;
+    }
+#nav_bar{
+    top:0;
+}
+
+   </style>
+
+</head>
+<body id="body" style="padding-top: 0px;">
+
+
+  
+  <div id="wrapper" class="flex flex-col ">
+    <nav id="nav_bar" style=" position: fixed; width: 100vw;z-index: 2; font-family: 'Hanken Grotesk', sans-serif; background-color: #002651" class="navbar navbar-expand-lg navbar-dark">
+      <div id="nav_logo" class="container-fluid">
+        
+        <a class="navbar-brand" style=" background-color: ;" href="#campus-tree">Campus Tree </a>
+       
+        <button id="tgl_button" style="border: none; color: white; 
+        ";
+ class="navbar-toggler collapsed me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> <i class="fa-solid fa-bars" ></i></span>
+        </button>
+        
+        <div  class="collapse navbar-collapse" id="nav-toggle">
+          <ul id="navabar_links"class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
+            <a  class="nav-link "href="/">Home</a>
+            <a class="nav-link " href="/listing-challenges">Challenges</a>
+            <a  class="nav-link" href="/listing-hackathon">Hackthons</a>
+            <a  class="nav-link"  href="/logout">Logout</a>
+        
+          </ul>
+        </div>
+       
+      </div>
+    </nav>
+
+<div id="all-profiles-out">  
+    <div id="search-container" class="search-container">
+      <input  id="input_user" type="text" placeholder="Enter Name in Small Letters">
+      <button
+       type="button" id="search_btn"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="icon" class="loader-container">
+      <i  class="fa fa-spinner fa-spin"></i>
+    </div>
+
+
+<!--Profile-->
+<div id="profile">
+
+</div>
+</div>
+      <!-- Footer -->
+
+      <div id="footer" class="text-center" style="">
+        © 2023 Copyright:
+  <a class=" copyright text-white" href="" style="
+      font-family: inherit;
+      font-weight: 100;
+  ">Campustree.com</a>
+      </div>
+
+  </div>
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/1b26aa43df.js" crossorigin="anonymous"></script>
+  
+<script>
+let search_container=document.getElementById("search-container")
+
+
+let tgl_button=document.getElementById("tgl_button");
+tgl_button.addEventListener("click",()=>{if(tgl_button.classList.contains("collapsed")){search_container.style.marginTop="7rem";}   else{search_container.style.marginTop="19rem"}   });
+
+ 
+
+
+
+
+button.addEventListener('click', event => {
+bars.classList.toggle('hidden')
+xmark.classList.toggle('hidden')
+menu.classList.toggle('translate-x-full')
+});
+
+
+const cross=document.getElementById("xmark");
+const tgl_btn=document.getElementById("bars");
+cross.addEventListener("click",function(){
+  
+search_container.style="margin-top:10rem;"
+let menu=document.getElementById("menu")
+        menu.style="margin-top:0rem;"
+        menu.style="margin-top:3rem; color:black; background:white"
+  
+
+  });
+tgl_btn.addEventListener("click",function(){
+search_container.style="margin-top:22rem;"
+let menu=document.getElementById("menu")
+     menu.style="margin-top:4rem; color:black; background:white"
+})       
+
+</script>
+
+
+
+
+
+<script>
+
+console.log("Ok");
+let search_btn=document.getElementById("search_btn");
+let icon=document.getElementById("icon");
+const searchInput = document.querySelector(".search-container input");
+
+let allData={};
+let can_search=false;
+
+window.onload=async()=>{
+const response = await fetch("http://localhost:3000/other_profile", {      //localhost:3000
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+       headers: {
+        'Content-Type': 'application/json'
+
+       },
+
+        // body data type must match "Content-Type" header
+    }).then((Response)=>{
+      return Response.json();
+    }).then((data)=>{
+      //console.log(data);
+allData=data;
+//console.log(allData);
+  
+
+
+icon.style.display="none";
+data.forEach((data,n)=>{
+
+
+  // let pbox=document.createElement("div");
+  // pbox.setAttribute("class","pbox");
+  // profiless.appendChild(pbox);
+   user_id=data.user_id.toString();
+
+  let profile=document.getElementById("profile");
+ 
+//console.log(data.user_id.toString());
+
+
+profile.innerHTML+=`
+   
+<div id="profiless">
+<div id="image-div" class="">
+  <img  src=${data.profile_image}></div>
+
+      <div id="main_content" class="">
+        <div id="details-div">
+            <h4 id="fname"> ${data.fullname}</h4>
+            <h4 id="fcollege">@${data.user_id}</h4>
+            </div>
+           <p><span></span></p>
+            <p>score:0</p><p></p></div>
+<div id="button-div">
+<button   class="btn btn-primary" onclick="seeProfile('${user_id}')" >view profile</button>
+</div>
+            
+</div>
+
+
+
+
+
+
+     `;
+              
+              can_search=true;
+            });
+    
+          
+        
+
+
+
+
+    }).catch((err)=>{
+        console.log(err);
+        alert("Something went wrong");
+    });
+};
+
+
+
+
+
+
+
+
+let input_user=document.getElementById("input_user");
+input_user.addEventListener("keypress",function(e){
+var key = e.keyCode;
+if(key === 32 && input_user.value.length==0){
+e.preventDefault();
+return false;
+}else if (event.key === "Enter" &&input_user.value.length!=0) {
+e.preventDefault();
+search_btn.click();
+console.log("ok");
+}
+})
+
+
+
+
+
+const seeProfile=((userId)=>{
+//post requests
+
+
+console.log(userId);
+ window.location.href= "/user/"+userId;
+  
+});
+
+
+
+let p=document.createElement("p");
+
+search_btn.addEventListener("click", () => {
+  const searchTerm = searchInput.value;
+
+     
+
+
+  console.log("You searched for:", searchTerm);
+  
+  if(can_search==true  && searchInput.value!=""){
+   //for showing no user found
+   
+      console.log(allData);
+      profiless=document.getElementById("profile");
+      console.log(profiless);
+      let nothing=false;
+   
+      allData.forEach((item,index)=>{
+       
+        if(searchInput.value==item.fullname.substr(0,searchInput.value.length).toLowerCase()){
+            
+              p.setAttribute("class","no_found");
+            nothing=true;
+            profiless.children[index].style.display="flex";
+            
+            
+        }
+        
+        else{
+            profiless.children[index].style.display="none";
+        }
+      });
+      if(nothing==false){
+          
+          p.innerHTML="No user found";
+          p.display="block";
+          p.setAttribute("class","no_found");
+          profiless.appendChild(p);
+
+      }
+
+
+    
+  }
+else{
+    profile.style.display="flex";
+}
+ // input_user.value="";
+
+});
+
+
+</script>
+
+</body></html>
