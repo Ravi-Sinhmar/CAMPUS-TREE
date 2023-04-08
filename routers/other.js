@@ -73,8 +73,11 @@ res.redirect("/team");
 
 
 router.get("/team",(req,res)=>{
+  console.log("req gone in othe.js")
     res.render("listing_team");
   })
+
+  
   router.post("/showing-team", async (req, res) => {
     try {
       let total_challenges;
