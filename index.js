@@ -14,7 +14,7 @@ const other=require("./routers/other");
 // const http = require('http').createServer(app);
 const register=require("./models/registers");
 const profile=require("./routers/profile");
-const auth=require("../middleware/auth");
+const auth=require("./middleware/auth");
 
 const story=require("./routers/stories");
 const ejs=require("ejs");
