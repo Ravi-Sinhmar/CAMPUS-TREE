@@ -40,7 +40,7 @@ if(user){
     
     });
     await user.save();
-    
+    res.redirect("listing_team");
 }else{
     
     const newww= await new team({
@@ -61,8 +61,7 @@ if(user){
 
 
 //console.log(user);
-res.render("listing_team");
-
+res.redirect("listing_team");
     }catch(err){
         console.log(err);
         res.send("error")
@@ -157,7 +156,6 @@ res.redirect("/hackathon");
       
     });
     await newww.save(); 
-
 res.redirect("/hackathon");
     //redirect page
   
