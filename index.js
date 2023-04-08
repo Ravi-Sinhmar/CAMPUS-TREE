@@ -14,7 +14,7 @@ const other=require("./routers/other");
 // const http = require('http').createServer(app);
 const register=require("./models/registers");
 const profile=require("./routers/profile");
-const auth=require("./middleware/auth");
+
 
 const story=require("./routers/stories");
 const ejs=require("ejs");
@@ -56,7 +56,7 @@ http.listen(PORT, () => {
     res.sendFile(__dirname+"/public/hack.html");
   });
 // router 1
-app.get('/chats',auth,(req, res) => {
+app.get('/chats',(req, res) => {
     res.render("chat")
 
 });
