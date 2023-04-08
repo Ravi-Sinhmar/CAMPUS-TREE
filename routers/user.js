@@ -211,6 +211,15 @@ router.post("/otp",async(req,res)=>{
          }
 })
 
+router.get("/logout",(req,res)=>{
+    //unset cookies to empty string 
+    res.cookie("id","");
+    res.cookie("user_id","");
+    res.cookie("name","");
+    res.redirect("/register");
+
+
+})
 
 
 module.exports=router;

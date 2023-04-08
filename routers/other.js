@@ -248,7 +248,7 @@ console.log(err);
   
 
     router.get("/challenges",(req,res)=>{
-      res.render("Listing_challenges");
+      res.render("listing_challenges");
     })
 
 router.post("/show_challenges",async(req,res)=>{

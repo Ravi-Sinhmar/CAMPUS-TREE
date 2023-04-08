@@ -403,7 +403,7 @@ color: #002651;
 <% if (typeof status != "undefined" && status=='false' && title=="Not_found"  ) { %>
   <script defer >
     
-  
+    alert('<%= message%>'); 
  password_field=document.getElementById("password_field");
  email=document.getElementById("email");
 password_field.type="text";
@@ -420,7 +420,7 @@ email.style.border="3px solid #FF9494";
 <!--Password not match-->
 <% if (typeof status != "undefined" && status=='false' && title=="password"  ) { %>
   <script>
-    
+    alert('<%= message%>'); 
     
 password_field=document.getElementById("password_field");
  email=document.getElementById("email");
@@ -445,7 +445,7 @@ password_field.style.border="3px solid #FF9494";
 
  <% if (typeof status != "undefined" && status=='false' && title=='Internal') { %>
   <script>
-      
+      alert('<%= message%>'); 
       </script>
        
     <% } %>

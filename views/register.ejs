@@ -562,7 +562,7 @@ color: white;
 <% if (status=='false' &&  title=='Email' ) { %>
                         
   <script >
-      
+      alert('<%= message%>'); 
        email=document.getElementById("email");
        full_name_field=document.getElementById("full_name_field");
 user_id_field=document.getElementById("user_id_field");
@@ -590,6 +590,7 @@ city=document.getElementById("city");
 
 <% if (status=='false' && title=='Internal') { %>
 <script>
+  alert('<%= message%>'); 
     </script>
      
   <% } %>
@@ -600,7 +601,7 @@ city=document.getElementById("city");
   <% if (status=='false' &&  title=='username' ) { %>
                       
     <script defer>
-   
+   alert('<%= message%>'); 
         
         
          email=document.getElementById("email");
