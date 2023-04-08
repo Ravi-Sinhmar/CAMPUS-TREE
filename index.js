@@ -55,7 +55,7 @@ http.listen(PORT, () => {
     res.sendFile(__dirname+"/public/hack.html");
   });
 // router 1
-app.get('/chats', (req, res) => {
+app.get('/chats', auth,(req, res) => {
     res.render("chat")
 
 });
