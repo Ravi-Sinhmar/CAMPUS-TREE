@@ -1125,10 +1125,20 @@ font-family: 'Hanken Grotesk', sans-serif;
           <div class="message__area" style="
    
 "></div>
-         
-              <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..." style=";height: 72px;"></textarea>
-        
-      
+          <div style="    display: flex;
+          flex-direction: row;
+          /* justify-content: space-around; */
+          gap: 4px;">    
+
+              <textarea class="add" id="textarea" cols="30" rows="1" placeholder="Write a message..." style="height: 72px;"></textarea>
+     <button id="add-interest" style="    font-size: 1.1rem;
+     background: white;
+     color: black;
+     width: 2rem;
+     font-weight: 700;
+     border-radius: 4px;height: 4rem;">add</button>
+     
+     </div> 
    
     </div>
 
@@ -1804,7 +1814,13 @@ else {
           })
 
 });
+let add_input=document.querySelector(".add")
+   let add_interest= document.getElementById("add-interest")
+add_interest.addEventListener("click",function(){
 
+        sendMessage(add_input.value);
+        
+})
 textarea.addEventListener("keyup" , (e) => {
     if (e.key == 'Enter') {
         sendMessage(e.target.value);

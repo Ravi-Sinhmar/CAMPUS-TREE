@@ -453,8 +453,11 @@ border-radius: 0.5rem;
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="form-group">
                     <label for="fullName">College *</label>
+                
                     <input value="<%=data.college%>" name="college" type="text" class="form-control" id="college" placeholder="Enter college name" maxlength="30">
-                </div>
+               
+               
+                  </div>
             </div>
         </div>
         <div id="additional-div" class="row gutters">
@@ -467,8 +470,20 @@ border-radius: 0.5rem;
             <div  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div  id="additional-details"  class="form-group">
                     <label for="zIp">Interest</label>
-                    
-<input id="inter" type="text" class="form-control" placeholder="Enter your interest and press enter" onkeydown="search(this)" maxlength="15">
+                    <div style="    display: flex;
+                    flex-direction: row;
+                    /* justify-content: space-around; */
+                    gap: 4px;">              
+               <input id="inter" type="text" class="form-control add" placeholder="Enter your interest and press enter" onkeydown="search(this)" maxlength="15">
+               <button id="add-interest" style="    font-size: 1.3rem;
+               background: white;
+               color: black;
+               width: 4rem;
+               font-weight: 700;
+               border-radius: 4px;">add</button>
+               
+               </div> 
+
 <div id="hide_input" style="display: none;">
 
 </div>
@@ -574,12 +589,35 @@ Regular expression
 */
 let skill =document.getElementById("skill");
     let hide_input=document.getElementById("hide_input");
-    
+    let add_input=document.querySelector(".add")
+   let add_interest= document.getElementById("add-interest")
     //when an user enter all his /her interest then
     //element is create and append it the main div
     //correstponding input tag fpor dealing with backend
     //and for icon also
     //seach genrally for EventListener
+    add_interest.addEventListener("click",function(){
+if(add_input.value!=""){
+            event.preventDefault();
+            let x=document.createElement("div"); x.style.cssText ="background-color:#be6a15;border-radius: 0.2rem;padding: 0.4rem;color: black;text-align: center;margin: 0.2rem;display: inline-block"
+          x.innerHTML=add_input.value;
+          
+          //assign all values to input
+          let input=document.createElement("input");
+       input.setAttribute("name",`interest[]`);
+          input.value=add_input.value;
+          input.style.display="none";
+    //     
+    
+    add_input.value="";  
+          skill.appendChild(x); 
+          x.appendChild(input);
+             let icon=document.createElement("i");  icon.setAttribute("class","fa fa-window-close"); icon.setAttribute("aria-hidden","true"); icon.style.color="black"; icon.style.margin="5px"; icon.setAttribute("onclick",`del(this.parentElement)`);
+       console.log(icon); x.appendChild(icon);
+        }else{
+            event.preventDefault();
+        }
+})
     const search=((ele)=> {
    
        
