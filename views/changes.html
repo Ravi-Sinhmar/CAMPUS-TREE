@@ -1,1268 +1,389 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.6">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="hstyle.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Cinzel&family=Montserrat:wght@100&family=Mukta:wght@200&family=Rokkitt:wght@100&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
- <link rel="stylesheet" href="cropperjs/dist/cropper.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Announcement</title>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          clifford: '#da373d',
-        }
-      }
-    }
-  }
-  </script>
-  <style type="text/tailwindcss">
-  @layer utilities {
-    .content-auto {
-      content-visibility: auto;
-    }
-  }
-  </style>
-
-<style>
- #navabar_links a{
-  color: white;
-  visibility: visible;
-
-  }
-
-  #navabar_links a:hover{
-    color: #be6a15;
-    font-weight: 700;
-    font-size: 1.2rem;
-  }
-
-  .nav-link{
-    font-size: 1.2rem;
-  margin-right: 1.2rem;
-  text-decoration: none;
-  text-decoration-style: none;
-  }
-
-
-  .navbar-brand{
-    font-size: 2.2rem;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
    
-  }
-  .navbar-brand:hover{
-    color: #be6a15;
-    font-weight: 600;
-  }
+    <title>Add Challenges</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700&family=Karla:wght@600&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
  
-  .copyright{
-    font-weight: 400;
-  color:#be6a15;
-  font-family: 'Hanken Grotesk', sans-serif;
-  text-decoration: none;
-  text-decoration-style: none;
- 
-  }
- 
-  #footer a:hover{
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #be6a15;
-  }
-
-html{
-  width: 100%;
-  padding: 0;
-  margin: 0;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: white;
+        font-family: 'Hanken Grotesk', sans-serif;
+      }
+      textarea {
+        height: 1rem;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
 }
-body{
-  width: 100%;
-  margin: 0;
-  background: white;
-  padding: 0;
-
-}
-#nav-register-now{
-      width: 9rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 19px;
-  font-weight: 600;
-  border-radius: 3px;
-  margin-left: auto;
-  margin-right: 52px;
-  font-family: 'Hanken Grotesk', sans-serif;
-  
-    }
-
-    #nav-register-now i{
-color: white;
-font-size: 3rem;
-    }
-    #nav-register-now i:hover{
-      color: #be6a15;
-      font-size: 3.2rem;
-    }
-
-
-    #nav_logo button{
-      font-size: 2rem;
-      border: none;
-    }
-
-.logo{
- 
-  font-size: 2.6rem;
-  
-  margin-left: 0.8rem;
-  letter-spacing:0;
-  font-family: 'Alkatra', cursive;
-
-}
-
-#bars{
-  font-size: 3rem;
- 
-  
-}
-#xmark{
-font-size: 3rem;
-color: white;
-}
-#menu a{
-font-size: 2rem;
-
-}
-#menubar{
-  height: 6rem;
-  background-color: #002651;
-  color: white;
-  z-index: 1;
-
-}
-
-#icon-section{
-  width: 100%;
-  margin-top:6rem ;
-  padding-left: 1rem;
-  padding-top: 0.8rem;
-  border-bottom:1px solid #002651;
-  padding-bottom: 0.5rem;
-
-}
-
-#icon-section img{
-width: 7rem;
-height: 7rem;
-border: 4px solid #002651;
-
-}
-#main-div{
-  margin-top: 12rem;
-  background-color: white;
-
-}
-
-
-
-#login-card{
- 
-  border-radius: 2rem;
-  margin-top: 15rem;
-  padding: 1rem 3rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  background-color: #002651;
-
-
-}
-#login-card  h1{
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-  font-size: 3.5rem;
- 
-}
-
-
-.ravi{
-  color: red;}
-
-#story-page{
-  background:#002651;
-  border-radius: 1rem;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 80vh;
-overflow-x: scroll;
-
-margin-right: 3rem;
-border: 0.3rem solid white;
-padding: 1rem;
- 
-}
-
-
-  #login-card p{
-      font-size: 1.2rem;
-      
-  }
-
-#login-card input{
- height: 4rem;
- padding-left:1rem;
- background-color: white;
-color:black;
-margin-bottom: 2px;
-
-
-
-}
-
-#forget-section a{
-  color: white;
-  margin-top: 1.4rem;
-}
-#login-card button{
- height: 4rem;
- padding-left:1rem;
- background-color: white;
-color:white;
-font-size: 2.2rem;
-margin-top: 1rem;
-background-color: rgb(21, 26, 27);
-
-}
-
-
-
-
-#submit_button{
-  margin-top: 3rem;
-  height: 5rem;
-  background-color: white;
-  font-size: 2.6rem;
- padding-bottom: 1px;
- font-family: 'Mukta', sans-serif;
-  font-weight: 600;
-
-
-}
-
-
-
-#below_signup{
-  color: white;
-  font-size: 1.6rem;
-}
-#footer{
-height: 6rem;
-background-color: #002651;
-  font-size: 1.6rem;
-  padding-top: 1.7rem;
-}
-
-
-
-
-
-/*
-changes
-
-
-
-
-*/
-#hackathon-page{
-  background:#002651;
-  border-radius: 1rem;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 80vh;
-overflow-x: scroll;
-
-margin-right: 3rem;
-border: 0.3rem solid white;
-padding: 1rem;
-}
-#challenges-page{
-  background:#002651;
-  border-radius: 1rem;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 80vh;
-overflow-x: scroll;
-
-margin-right: 3rem;
-border: 0.3rem solid white;
-padding: 1rem;
-}
-
-
-
-
-ravi{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* outer card design */
-
-#outer-card{
- font-size: 3rem;
- font-weight: 800;
- display: flex;
- justify-content: space-around;
- align-items: center;
- height: 7rem;
- color: white;
- background: #be6a15;
-}
-
-/* card design start from here to end */
-
-
-
-#status-card{
-  background: white;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 1rem;
-  height: fit-content;
-  padding-bottom: 10px;
-  align-items: flex-start;
-  border-radius: 4px;
-  padding: 9px;
-  margin-top: 0.5rem;
-}
-
-#top-row{
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-}#middle-row{
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-  width: 100%;
-  font-size: 1.1rem;
-}
-#bottom-row{
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  font-size: 1.1rem;
-  color: #be6a15;
-  font-weight: 700;
-}
-#join{
+      .container {
+        width: 50%;
+        margin: 10rem auto 0;
+        background: #be6a15;
+        background-color: #002651;
+        padding: 30px;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Hanken Grotesk', sans-serif;
+        color: white;
+        height: inherit;
+        transition: all 0.25s ease 0s
+      }
+
+      h1 {
+        
+        margin-bottom: 20px;
+        color: #be6a15;
+        font-size: 4rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: block;
+        text-align: left;
+        width: 100%;
+      }
+
+      textarea,
+      input[type="text"] {
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+        border: 3px solid #be6a15;
+    margin: 16px;
+  padding: 5px;
+  box-sizing: border-box;
   background-color: #be6a15;
- padding: 5px;
- border-radius: 4px;
- font-size: 1.1rem;
- color: white;
- font-weight: 500;
- 
-}
-#heading a{
+  caret-color: black;
+  color: white;
   font-size: 1.2rem;
-  font-weight: 600;
+      }
+
+      textarea {
+       height: 3rem;
+        max-width: 100%;
+        max-height: 200px;
+        background-color: #be6a15;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
+      }
+      textarea:hover{
+        caret-color: black;
+      }
+      input[type="submit"]{
+        background-color: #be6a15;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
+      }
+      input[type="button"] {
+        background-color: #be6a15;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
+      }
+
+      input[type="submit"]:hover {
+        background-color: white;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
+      }
+      input[type="button"]:hover{
+        background: white;
+        color: #002651;
+      }
+
+      #nav-register-now{
+        width: 9rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-left: auto;
+    background: #be6a15;
+    margin-right: 48px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+      }
+
+      #nav-register-now:hover{
+background: white;
+color: #002651;
+      }
+
+      #nav_logo button{
+        font-size: 2rem;
+        border: none;
+      }
+      #navabar_links a{
+    color: white;
+    visibility: visible;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+
+    #navabar_links a:hover{
+      color: #be6a15;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .nav-link{
+      font-size: 1.2rem;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+  
+ 
+    .navbar-brand{
+      font-size: 2.2rem;
+     
+    }
+    .navbar-brand:hover{
+      color: #be6a15;
+      font-weight: 800;
+    }
+   
+    .copyright{
+      font-weight: 400;
+    color:#be6a15;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-decoration: none;
+    text-decoration-style: none;
+   
+    }
+   
+    #footer a:hover{
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #be6a15;
+    }
+#nav_bar{
+    top:0;
 }
 
-/* card design end here */
+#footer{
+    height: 6rem;
+    width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+background-color: #002651;
+margin-top: 4rem;
+}
 
 
+      @media screen and (max-width: 768px) {
+        #nav_logo button{
+            font-size: 1.5rem;
+            margin: 0;
+            margin-right: -4px;
+            width: 1rem;
+        }
 
-</style>
+        #nav-register-now{
+            width: 4rem;
+            height: 1.7rem;
+            font-size: 1.1rem;
+            margin: 0;
+            margin-left: auto;
+        }
+        .navbar-brand{
+            font-size: 1.5rem;
+        }
+        .container {
+          width: 96%;
+          margin: 12rem auto;
+          height: inherit;
+        }
 
+        h1 {
+          font-size: 24px;
+        }
 
+        textarea,
+        input[type="text"] {
+          font-size: 1.2rem;
+        }
 
+        input[type="submit"] {
+          font-size: 1.2rem
+        }
 
-
-
-
-
-
-
-
-
-
-<!-- //this is our style css -->
-
-
-
-
-</head>
-<body id="body" style="padding-top: 0px;">
-
-
-
-
-  <div id="main_container" >
-  <div id="wrapper" class="flex flex-col ">
+      }
+    </style>
+  </head>
+  <body>
     <nav id="nav_bar" style=" position: fixed; width: 100vw;z-index: 2; font-family: 'Hanken Grotesk', sans-serif; background-color: #002651" class="navbar navbar-expand-lg navbar-dark">
       <div id="nav_logo" class="container-fluid">
         
         <a class="navbar-brand" style=" background-color: ;" href="#campus-tree">Campus Tree </a>
-        <div id="nav-register-now" style="
-    
-    "><a href="/chats">
-    <i style="color: white;" class='fas fa-comment-dots'></i>
-  </a></div>
+        
+
         <button id="tgl_button" style="border: none; color: white; 
-        ";
-        " class="navbar-toggler collapsed me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""> <i class="fa-solid fa-bars" ></i></span>
+        " ; class="navbar-toggler collapsed me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> <i class="fa-solid fa-bars"></i></span>
         </button>
         
-        <div  class="collapse navbar-collapse" id="nav-toggle">
-          <ul id="navabar_links"class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
-            <a class="nav-link " href="/addChallenges">Add Challenges</a>
-            <a  class="nav-link" href="/addHackathon">Add Hacakthons</a>
-            <a  class="nav-link"  href="/createTeam">Add Team</a>
-            <a  class="nav-link" href="/myprofile">My Profile</a>
-            <a  class="nav-link" href="/chats">Chats</a>
-
-           
-
+        <div class="collapse navbar-collapse" id="nav-toggle">
+          <ul id="navabar_links" class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
+            <a class="nav-link" href="/announcement">Announcement</a>
+            <a class="nav-link" href="/challenges">All Challenges</a>
+            <a class="nav-link" href="/chats">Chats</a>
+            <a class="nav-link " href="/myprfile">My Profile</a>
         
           </ul>
         </div>
        
       </div>
     </nav>
-    <section id="icon-section" class="" style="
-  display:none;
-     
-  
-  ">
-    <ul id="story_container" class="allstory  flex justify-between overflow-x-scroll stories  rounded " style="
-  display: flex;
-  /* justify-content: center; */
-  overflow-x: scroll;
-  gap: 19px;
-  ">
-      <li class="flex flex-none flex-col items-center space-y-1" style="/* display: flex; */list-style-type: none;list-style: none;list-style-type: none;">
-        <div class="nonedient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full" style="/* display: flex; */">
-          <a id="my_story"  class="block bg-white p-1 rounded-full relative" style="">
-            <img id="me_story" src="<%=profile_image%>" class="w-16 h-16 rounded-full object-cover" style="" onclick="see_stories(`<%=userid%>`)">
-            <label class="custom-file-upload" style="
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    align-items: end;
-  ">
-  <input name="file" id="file" class="input-file" type="file" accept="image/png, image/gif, image/jpeg " style="display: none;width: 100%;">
-  <i id="upload" class="fa fa-plus" onclick="" aria-hidden="true" style="text-align: center;/* border: 2px solid; */cursor: pointer;text-align: center;color: cornflowerblue;font-size: 18px;border-radius: 100%;border: 2px solid;width: 18px;height: 18px; background:#002651;;margin-top: -34%;"></i>
+    <div class="container">
+        <h1 style="font-size: 2.3rem;">Create a challenge <i class="fas fa-question-circle"></i></h1>
+      <form action="/add-challenges" method="POST">
 
-
-
-</label>
-
-<!--Spin loader for uploading..-->
-<i id="spin" class="fa-solid fa-spinner fa-spin" style="
-    position: absolute;
-    top: 50%;
-    left: 39%;
-    font-size: 2rem;
-    display: none;
-"></i>
-          </a>
-        </div>
+        <label for="textarea1">Name of challenge (Max 60 words)</label>
+        <textarea name="name" id="textarea1" maxlength="60" class="name"></textarea>
+        <label for="textarea2">Challenge Details/Description (Max 150 words)</label>
+        <textarea name="detail" id="textarea2" maxlength="150" class="about"></textarea>
         
-        <a href="#" class="text-xs text-slate-800 font-semibold" style="
-  margin-left: 16%;
-  ">Your story</a>
-      </li>
+        <label for="projectType">Tech stack</label>
+        <input type="text" id="type" maxlength="60" name="type" class="tech" />
+        
 
-  
-  </ul>
-  </section>
-  
-  
-  
-
-  <div id="outer-card" style="    margin-top: 5rem ;transition: all 0.25s ease 0s" >
-    <h1>
-    Requests
-    </h1>
-
-  </div>
-
-  <section id="story-page" class="story-section noney-800 w-screen h-screen flex justify-center items-center" style="">
+        <label for="projectType">Contact link</label>
+        <input type="text" id="type" name="link" class="link" />
+        <input id="button" type="button" value="Create" />
+      </form>
+    </div>
 
 
-
-
-
-
-    
-<!--Idk why it's id name is story-page but it's team page listing nedd a member like that -->
-
-<!--Section where challenges are show
-    
-
-bhai ye div hai for listing team -->
-
-
-
-
-
-
-
-
-  </section>
-
-
-  <div id="outer-card" style="">
-    <h1>
-    Hackathons
-    </h1>
- 
-  </div>
-  <!--hackathon listing-->
-  <section id="hackathon-page" class="story-section noney-800 w-screen h-screen flex justify-center items-center" style="">
-
-
-<!--ye div hai -->
-
-
-
-
-
-
-  </section>
-
-
-
-
-  
-  <div id="outer-card" style="">
-    <h1>
-    Challenges
-    </h1>
-  
-  </div>
-  <!--challenges listing-->
-  <section id="challenges-page" class="story-section noney-800 w-screen h-screen flex justify-center items-center" style="">
-</section>
-
-  
-  
-  </div>
-  
-
-      <!-- Footer -->
-
-      <div  id="footer" class="text-center" style="margin-top: 1%;">
-        © 2023 Copyright:
-  <a class=" copyright text-white" href="" style="
-      font-family: inherit;
-      font-weight: 100;
-      
+    <div id="footer" class="text-center" style=" color: white; font-size: 1.3rem;">
+      © 2023 Copyright:
+  <a class=" copyright" href="" style="
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    color: #be6a15;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-bottom: -7px;
   ">Campustree.com</a>
-      </div>
-
-  </div>  
-
-
-
-
-
-  <div id="story_container_page" style=" background:#002651;">
-    <div id="inside_container">
-<div id="story_area">
-  
-<div id="close_icon">
-<i class="fa fa-close">
-
-</i>
-</div>
-</div>
-
-
-<div style="display: none;" id="another_story_area">
-<img  id="story_image"   style="width: 100%; height: 100%; border-radius: 0%;border: 2px solid transparent;">
-
-<div id="icons">
-
-  <i id="left_arrow" class="fa-solid fa-arrow-left"></i>
-  <i style="position: absolute;
-  left: 47%;
-  font-size: 3rem" id="load_image" class="fa-solid fa-spinner fa-spin"></i>
-
-  <i id="right_arrow" class="fa-solid fa-arrow-right"></i>
-</div>
-</div>
-
     </div>
-
-
-
-
-  </div>
-
-</body>
+  </body>
+</html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="https://kit.fontawesome.com/1b26aa43df.js" crossorigin="anonymous"></script>
-  <script>
-
-// const button=document.getElementById("button");
-//     button.addEventListener('click', event => {
-//       bars.classList.toggle('hidden')
-//       xmark.classList.toggle('hidden')
-//       menu.classList.toggle('translate-x-full')
-//     });
-  //   const cross=document.getElementById("xmark");
-  //   const tgl_btn=document.getElementById("bars");
-  //   tgl_btn.addEventListener("click",function(){
-  //    menu=document.getElementById("menu")
-  //    menu.style="margin-top:4rem; color:black; background:white"
-  // icon_section.style="margin-top:22rem;display: flex;justify-content: center";
-  
-  //   })  
-  //   cross.addEventListener("click",function(){;
-  //         body.style="padding-top:0"
-  //          main_div=document.getElementById("main-div")
-  //   icon_section.style=" background:white;margin-top:5rem;display: flex;justify-content: center";
-  //       let menu=document.getElementById("menu")
-  //       menu.style="margin-top:0rem;"
-  //       menu.style="margin-top:4rem; color:black; background:white"
-        
-
-  //       });
 
 
-
-  
-
-  
-/*
-toogle button
-*/
-
-
-
-
- 
-
-
-
-  </script>
-
-</body></html>
-
-
-
-
-
-
-
-
-
-
-
-
-<script >
-//toogle 
+<script>
 let tgl_button=document.getElementById("tgl_button");
-let outer_card=document.getElementById("outer-card");
-let icon_section=document.getElementById("icon-section");
-tgl_button.addEventListener("click",()=>{
-  if(tgl_button.classList.contains("collapsed")){
-    outer_card.style.marginTop="5rem";
+let container=document.querySelector(".container");
+
+tgl_button.addEventListener("click",()=>{if(tgl_button.classList.contains("collapsed")){container.style.marginTop="8rem";}   else{container.style.marginTop="20rem"}   });
+
+let name=document.querySelector(".name");
+let about=document.querySelector(".about");
+let link=document.querySelector(".link");
+let tech =document.querySelector(".tech");
+
+
+let button=document.getElementById("button");
+
+button.addEventListener("click",()=>{
+  if(name.value.length>2){
+if(about.value.length>9){
+
+  if(tech.value.length>2){
+
+  button.type="submit";
+
   }else{
-    outer_card.style.marginTop="16rem";
+alert("Tech stack should be min 3 digits long");
   }
-})
-
-
-
-let story_page=document.getElementById("story-page");
-
-let spin_loader=document.getElementById("spin_loader");
-;
-
-let spin=document.getElementById("spin");
-
-    let me_story=document.getElementById("me_story");
-   
-
-
-
-
- let story_container=document.getElementById("story_container");
- let stories;
-let story_image=document.getElementById("story_image");  //image container
-let right_arrow=document.getElementById("right_arrow");
-let left_arrow=document.getElementById("left_arrow");
-
-let i=0;  //stories no
-
-
-
-
- 
-
-
-
-
-
-
-   
-
-
- //uploding stories
-
-let input=document.getElementById("file");  //input a file 
-    input.addEventListener("change",async(e)=>{ 
-      upload.style.display="none";
-      spin.style.display="block";
-      //click function 
-let url="";  //save uploaded image or video to url  
-let own_stories_results={};  
-const reader=new FileReader(); 
-reader.readAsDataURL(input.files[0]);
-reader.addEventListener("load",async()=>{
-let data={
-    image:reader.result
+}else{
+  alert("Description Should be 10 words long");
 }
-        const response = await fetch("https://campus-tree.onrender.com/stories", {
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-     headers: {
-      'Content-Type': 'application/json'
-    
-     },
-    
-     body:JSON.stringify(data) // body data type must match "Content-Type" header
-  }).then((result)=>{
-return result.json();
-  }).then((data)=>{
-    alert("Uploaded...");
-     //clearInterval(special_interval);
-     upload.style.display="block";
-      spin.style.display="none";
-     
-      
-  }).catch((err)=>{
-   upload.style.display="block";
-      spin.style.display="none";
-  alert("Something went wrong try again later");
-  })
-
-
-
-});
-
-    });
-
-
-
-
-
-    let close_icon=document.getElementById("close_icon");
-    let story_container_page=document.getElementById("story_container_page");  
-    let main_container=document.getElementById("main_container") ;
-   
-     ////see stories
-
-    let see_stories=async(userid,id)=>{
-      let idd=document.getElementById(id);
-    
-    const details={
-      userid:userid
-    }
-      const response = await fetch("https://campus-tree.onrender.com/see_stories", {
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-     headers: {
-      'Content-Type': 'application/json'
-    
-     },
-    
-     body:JSON.stringify(details) // body data type must match "Content-Type" header
-  }).then((result)=>{
-    story_image.src="";
-return result.json();
-  }).then((data)=>{
-    if(data.message=="no user found"){
-
-    }else{
-      main_container.style.display="none"; 
-      story_container_page.style.display="flex"; 
-
-      story_image.src="";
-      
-     //console.log(data);
-
-load_image.style.display="block";
-      
-
-setTimeout(()=> {
-         
-  story_image.src=data[i].url;
-
-stories=data;
-load_image.style.display="none";
-idd.style.border="2px solid transparent"
-      }
-      ,3000);
-    }
-    
-
-
-
-  
-     //clearInterval(special_interval);
-     
-      
-  }).catch((err)=>{
-  
-  })
-    };
-
-    
-
-//left arrow and right arrow
-
-left_arrow.addEventListener("click",()=>{
-  story_image.src="";
-  load_image.style.display="block";
-      
-  if(i==0){
-    main_container.style.display="block"; story_container_page.style.display="none";
   }else{
-    
-    setTimeout(()=> {
-         
-      story_image.src=stories[--i].url;
-
-load_image.style.display="none";
-      }
-      ,3000);
-      
-
+    alert("Name should be 3 digits long");
   }
-  
 })
-    right_arrow.addEventListener("click",()=>{
-      load_image.style.display="block";
-      story_image.src="";
-
-      if(i==stories.length-1){
-
-        main_container.style.display="block"; story_container_page.style.display="none";
-     
-  }else{
-    setTimeout(()=> {
-         
-         story_image.src=stories[++i].url;
-load_image.style.display="none";
-      }
-      ,3000);
-      
-
-
-  }
-    })
-    
-
-
-    
-    close_icon.addEventListener("click",()=>{main_container.style.display="block"; story_container_page.style.display="none";
-  story_image.src="";
-  });
-
-
-
-
-window.addEventListener('load',async()=>{
-
-//ist api
-  const response=await fetch("https://campus-tree.onrender.com/other_users",{
-method:"POST",
-headers: {
-'Content-Type': 'application/json'
-
-},
-}).then((Response)=>{
-return Response.json();
-}).then((data)=>{
-//console.log(data);
-
-
-
-for(let i=0;i<data.length;i++){
-let anotherdiv=`<li class="flex flex-none flex-col items-center space-y-1">
-<div class="nonedient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full">
-<a class="block bg-white p-1 rounded-full relative">
-  <img id="image${i+1}" src="${data[i].profile_image}" onclick="see_stories('${data[i].user_id}', 'image${i+1}')">
-</a>
-</div>
-<a href="#" class="text-xs text-slate-800">${data[i].fullname}</a>
-</li>`;
-
-story_container.insertAdjacentHTML('beforeend', anotherdiv);
-}
-//loop
-
-
-});
-
-//team listing...
-  const response2= await fetch("https://campus-tree.onrender.com/showing-team",{
-  
-  method:"POST",
-  headers: {
-        'Content-Type': 'application/json'
-
-       },
-}).then((response)=>{
-  
-  return response.json();
-}).then((data)=>{
-
-let element=``;
-data.forEach((element) => {
-  element.teams.forEach((team) => {
-   // console.log(team);
-
-
-//team llisting
-let challenges_page=document.getElementById("challenges-page");
-
-let ele=`<div id="status-card" class="" style="
-">
-<div id="top-row" class="card-row">
-
-
-
-    <div id="heading">
-       <a href="#" style="
-       text-decoration: none;
-     ">
-           <span  class="title" style="font-size: 2.3rem">
-            ${team.heading}
-           </span>
-         </a>
-      </div>
-      </div>
-
-  <div id="middle-row" class="content card-row" style="
-
-">
-
-    <p class="desc" style="
-  
-">
-  ${team.project_detail}
-    </p>
-  </div>
-  <div id="bottom-row" class="card-row">
-     <div id="bottom-left-col">
-      <div class="bottom-elements">
-
-        
-<p>Type:
-  <span>  ${team.project_type}</span>
-
-  </p>
-</div>
-<div class="bottom-elements">
-  <p>
-  Total Members
-  <span>
-    ${team.total_members}
-    </span>
-    <div>
-     
-    <span>
-Created by:
-      ${element.name}
-      </span>
-    </div>
-</p>
-</div>
-</div>
-
-<div id="join" class="bottom-elements">
-  
-    <a href="/chat" class="action" style="">
-      Contact Now
-      <span aria-hidden="true">
-        →
-      </span>
-    </a>
-  </div>
-  </div>
-    </div>
-    
-    <hr>`
-
-
-
-story_page.innerHTML+=ele;
-
-
-
-
-  });
-});
-
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-//response ===3
-//hackathon listing
-let hackathon_page=document.getElementById("hackathon-page");
-const response3=await fetch("https://campus-tree.onrender.com/show_hackathon",{
-method:"POST",
-headers: {
-'Content-Type': 'application/json'
-
-},
-}).then((Response)=>{
-return Response.json();
-}).then((hackathon_response)=>{
-
-
-//append to inner html
-
-
-hackathon_response.forEach((element) => {
-  element.hackathon_detail.forEach((ele) => {
-
-
-
-let new_ele=
-`
-
-
-
-<div id="status-card" class="" style="
-    ">
-<div id="top-row" class="card-row">
-
-
-    <div id="heading">
-       <a href="#" style="
-       text-decoration: none;
-     ">
-
-     <h6>${ele.location}}</h6>  <!--location--> 
-           <span class="title" style="
-    
-     ">
-            ${ele.hackathon_name}    <!--name-->
-           </span>
-         </a>
-      </div>
-      </div>
-
-  <div id="middle-row" class="content card-row" style="
-
-">
-
-    <p class="desc" style="
-  
-">
-  ${ele.description}
-    </p>
-  </div>
-  <div id="bottom-row" class="card-row">
-     <div id="bottom-left-col">
-      <div class="bottom-elements">
-<p>Type:
-  <span>  ${ele.fees}</span>
-
-  </p>
-</div>
-<div class="bottom-elements">
-  <p>
-  
-  <span>
-    
-    </span>
-</p>
-</div>
-</div>
-
-<div id="join" class="bottom-elements">
-  
-    <a href="/chat" class="action" style="">
-      Join Now
-      <span aria-hidden="true">
-        →
-      </span>
-    </a>
-  </div>
-  </div>
-    </div>`
-
-
-    
-
-hackathon_page.innerHTML+=new_ele;
-
-
-
-
-  })});
-
-
-
-
-
-
-
-
-
-}).catch((err)=>{
-});
-
-
-
-
-
-
-//reponse no ==4 listing challenges here 
-//name of challenges input ist
-//challenges type 
-//and last one discription about challenges
-
-const response4=await fetch("https://campus-tree.onrender.com/show_challenges",{
-method:"POST",
-headers: {
-'Content-Type': 'application/json'
-
-},
-}).then((Response)=>{
-return Response.json();
-}).then((data)=>{
-
-  let challenges_page=document.getElementById("challenges_page");
-data.forEach((ele)=>{
-  ele.challenges_detail.forEach((element)=>{
-    let new_ele=`
-      <div id="status-card" class="" style="
-      ">
-<div id="top-row" class="card-row">
-
-
-  <div  class="" style="
-      display: flex;
-      justify-content: center;
-      min-width: 5rem;
-      height: 5rem;
-      background: black;
-      margin-left: 0;
-      border-radius: 50%;
-      "><img src="" alt=""></div>
-      <div id="heading">
-         <a href="#" style="
-         text-decoration: none;
-       ">
-             <span class="title" style="
-      
-       ">
-              ${element.challenge_name}
-             </span>
-           </a>
-        </div>
-        </div>
-  
-    <div id="middle-row" class="content card-row" style="
-
-  ">
-
-      <p class="desc" style="
-    
-  ">
-    ${element.description}
-      </p>
-    </div>
-    <div id="bottom-row" class="card-row">
-       <div id="bottom-left-col">
-        <div class="bottom-elements">
-  <p>Type:
-    <span>  ${element.type}</span>
-  
-    </p>
-</div>
-<div class="bottom-elements">
-    
-
-</div>
-</div>
-
-<div id="join" class="bottom-elements">
-    
-      <a href="/chat" class="action" style="">
-        Join Now
-        <span aria-hidden="true">
-          →
-        </span>
-      </a>
-    </div>
-    </div>
-      </div>`;
-
-
-      
-      challenges_page.innerHTML+=new_ele;
-
-  });
-
-});
-
-
-
-
-
-
-
-
-
-
-
-});
-
-});
-
+//   let textarea1=document.getElementById("textarea1");
+//   let textarea2=document.getElementById("textarea2");
+//   let teamMembers=document.getElementById("teamMembers");
+//   let projectType=document.getElementById("projectType");
+// let submit_button=document.getElementById("button");
+// //heading validation
+
+// // const validate_heading=(input)=>{
+// //   if(input.value<41){
+// //     return true;
+// //   }return false;
+// // };
+
+// // const validate_project_dsc=(input)=>{
+// //   if(input.value>61){
+// //     return true;
+// //   }return false;
+// // };
+
+
+//   let button=document.getElementById("button");
+//   button.addEventListener("click",()=>{
+// if(textarea1.value!=""){
+// if(textarea1.value!="" ){
+// if(teamMembers.value!="" && projectType!=""){
+// submit_button.type="submit";
+// }else{
+//   alert("Fill all details");
+// }
+// }else{
+//   alert("Fill all details");
+// }
+// }
+
+
+// else{
+//   alert("Fill all details");
+// }
+//   });
+
+//   textarea1.addEventListener("keypress",(e)=>{if(e.keyCode==32 && textarea1.value==""){e.preventDefault(); return false;}})
+//   textarea2.addEventListener("keypress",(e)=>{if(e.keyCode==32 && textarea2.value==""){e.preventDefault(); return false;}})
+//   projectType.addEventListener("keypress",(e)=>{if(e.keyCode==32 && textarea1.value==""){e.preventDefault(); return false;}})
+//   teamMembers.addEventListener("keypress",(e)=>{if(e.keyCode>48 && e.keyCode<58){console.log("ikak"); return true; }  else{e.preventDefault();return false;} });
 </script>
-<!---->
