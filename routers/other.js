@@ -21,7 +21,7 @@ const auth=require("../middleware/auth");
 
 
 router.get("/createTeam",auth,(req,res)=>{
-    res.render("maketeam");
+    res.render("makeTeam");
 });
 
 router.post("/create-team",async(req,res)=>{
@@ -205,9 +205,6 @@ if(challenges_details){
  description:detail,
  type:type,
  link:link
-
-
-
 
 });
 await challenges_details.save(); 
