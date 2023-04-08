@@ -61,7 +61,8 @@ if(user){
 
 
 //console.log(user);
-res.redirect("/story");
+res.render("listing_team");
+
     }catch(err){
         console.log(err);
         res.send("error")
@@ -73,7 +74,7 @@ res.redirect("/story");
 
 
 router.get("/team",(req,res)=>{
-    res.render("Listing_team");
+    res.render("listing_team");
   })
   router.post("/showing-team", async (req, res) => {
     try {
