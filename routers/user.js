@@ -99,11 +99,13 @@ catch(err){
 
 router.post("/login",async(req,res)=>{
     try{
-    const {user_id,password}=req.body;
-    //console.log(email,password);
-    const user=await register.findOne({user_id:user_id});
+        
+        console.log(req.body)
+    const {email,password}=req.body;
+    console.log(email,password);
+    const user=await register.findOne({email:email});
      console.log(user);
-    const input_user={user_id:user_id,
+    const input_user={email:email,
     password:password};
     if(await !user){
         console.log("not found");
