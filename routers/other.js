@@ -40,7 +40,7 @@ if(user){
     
     });
     await user.save();
-    res.redirect("listing_team");
+    res.redirect("/team");
 }else{
     
     const newww= await new team({
@@ -61,7 +61,7 @@ if(user){
 
 
 //console.log(user);
-res.redirect("listing_team");
+res.redirect("/team");
     }catch(err){
         console.log(err);
         res.send("error")
