@@ -132,6 +132,7 @@ prize:{
 
 })
 await hackathon_data.save(); 
+res.redirect("/hackathon");
 
 
 
@@ -156,7 +157,7 @@ await hackathon_data.save();
     });
     await newww.save(); 
 
-res.redirect("/story");
+res.redirect("/hackathon");
     //redirect page
   
 }
@@ -210,8 +211,8 @@ if(challenges_details){
 
 });
 await challenges_details.save(); 
-consle.log(challenges_details);
-
+console.log(challenges_details);
+res.redirect("/challenges");
 }else{
 
   const newww= await new challenge_schema({
@@ -226,7 +227,7 @@ consle.log(challenges_details);
       
     });
     await newww.save(); 
-
+    res.redirect("/challenges");
 console.log(newww);
     //redirect page
   
