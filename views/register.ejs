@@ -429,7 +429,7 @@ color: #002651;
 "> Register</h1>
         <p class="mb-2  text-o" style="
 color: white;
-"> Email or Username</p>
+"> Enter Your <Details></Details></p>
         <form autocomplete="off" style="color: white;" action="/register" method="POST">
           <div id="form_inside" class="block" style="
           ">
@@ -438,10 +438,10 @@ color: white;
 <input autocomplete="false"   id="full_name_field" type="text"  name="full_name"  maxlength="50" placeholder="Full name"  class="" style="
             
 ">
-<input autocomplete="false"   type="text" id="user_id_field"  name="user_id"  maxlength="15" placeholder="User Id"  class="" style="
+<input autocomplete="false"   type="text" id="user_id_field"  name="user_id"  maxlength="6" placeholder="User Id"  class="" style="
             
 "> <!--6 to 12 user_id-->
-<input autocomplete="false"   type="email"  id="email" maxlength="30"  name="email" placeholder="Email"  class="" style="
+<input autocomplete="false"   type="email"  id="email"  name="email" placeholder="Email"  class="" style="
             
 ">
          
@@ -722,7 +722,7 @@ return true;
 const ValidateUserId=((user_id)=>{
 //6 to 12
 
-if(user_id.length>5 && user_id.length<13){
+if(user_id.length>2 && user_id.length<7){
 return true;
 }return false;
 });
@@ -800,7 +800,7 @@ alert("Check confirm password");
 }
 else{
 user_id_field.style.border="3px solid #FF9494";
-alert("User Id should be 6 digits long  ");
+alert("User Id should be grater then 2 and less than 7 digits");
 }
 }
 else{
