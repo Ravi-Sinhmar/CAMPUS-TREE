@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Add Challenges</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;400;600;700&family=Karla:wght@600&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: white;
+        font-family: 'Hanken Grotesk', sans-serif;
+      }
+      textarea {
+        height: 1rem;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
+}
+      .container {
+        width: 50%;
+        margin: 10rem auto 0;
+        background: #be6a15;
+        background-color: #002651;
+        padding: 30px;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Hanken Grotesk', sans-serif;
+        color: white;
+        height: inherit;
+        transition: all 0.25s ease 0s
+      }
+
+      h1 {
+        
+        margin-bottom: 20px;
+        color: #be6a15;
+        font-size: 4rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: block;
+        text-align: left;
+        width: 100%;
+      }
+
+      textarea,
+      input[type="text"] {
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+        border: 3px solid #be6a15;
+    margin: 16px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #be6a15;
+  caret-color: black;
+  color: white;
+  font-size: 1.2rem;
+      }
+
+      textarea {
+       height: 3rem;
+        max-width: 100%;
+        max-height: 200px;
+        background-color: #be6a15;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
+      }
+      textarea:hover{
+        caret-color: black;
+      }
+      input[type="submit"]{
+        background-color: #be6a15;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
+      }
+      input[type="button"] {
+        background-color: #be6a15;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
+      }
+
+      input[type="submit"]:hover {
+        background-color: white;
+        caret-color: black;
+        color: white;
+        font-size: 1.2rem;
+      }
+      input[type="button"]:hover{
+        background: white;
+        color: #002651;
+      }
+
+      #nav-register-now{
+        width: 9rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-left: auto;
+    background: #be6a15;
+    margin-right: 48px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+      }
+
+      #nav-register-now:hover{
+background: white;
+color: #002651;
+      }
+
+      #nav_logo button{
+        border: none;
+      }
+      #navabar_links a{
+    color: white;
+    visibility: visible;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+
+    #navabar_links a:hover{
+      color: #be6a15;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .nav-link{
+      font-size: 1.2rem;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    text-decoration-style: none;
+    }
+  
+ 
+    .navbar-brand{
+      font-size: 2.2rem;
+     
+    }
+    .navbar-brand:hover{
+      color: #be6a15;
+      font-weight: 800;
+    }
+   
+    .copyright{
+      font-weight: 400;
+    color:#be6a15;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-decoration: none;
+    text-decoration-style: none;
+   
+    }
+   
+    #footer a:hover{
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #be6a15;
+    }
+#nav_bar{
+    top:0;
+}
+
+#footer{
+    height: 6rem;
+    width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+background-color: #002651;
+margin-top: 4rem;
+}
+
+
+      @media screen and (max-width: 768px) {
+        #nav_logo button{
+            font-size: 1.5rem;
+            margin: 0;
+            margin-right: -4px;
+            width: 1rem;
+        }
+
+        #nav-register-now{
+            width: 4rem;
+            height: 1.7rem;
+            font-size: 1.1rem;
+            margin: 0;
+            margin-left: auto;
+        }
+        .navbar-brand{
+            font-size: 1.5rem;
+        }
+        .container {
+          width: 96%;
+          margin: 6rem auto;
+          height: inherit;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        textarea,
+        input[type="text"] {
+          font-size: 1.2rem;
+        }
+
+        input[type="submit"] {
+          font-size: 1.2rem
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav_bar" style=" position: fixed; width: 100vw;z-index: 2; font-family: 'Hanken Grotesk', sans-serif; background-color: #002651" class="navbar navbar-expand-lg navbar-dark">
+      <div id="nav_logo" class="container-fluid">
+        
+        <a class="navbar-brand" style=" background-color: ;" href="#campus-tree">Campus Tree </a>
+        
+
+        <button id="tgl_button" style="border: none; color: white; 
+        " ; class="navbar-toggler collapsed me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> <i class="fa-solid fa-bars"></i></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="nav-toggle">
+          <ul id="navabar_links" class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 ">
+            <a class="nav-link" href="/announcement">Announcement</a>
+            <a class="nav-link" href="/challenges">All Challenges</a>
+            <a class="nav-link" href="/chats">Chats</a>
+            <a class="nav-link " href="/myprfile">My Profile</a>
+        
+          </ul>
+        </div>
+       
+      </div>
+    </nav>
+    <div class="container">
+        <h1 style="font-size: 2.3rem;">Create a challenge <i class="fas fa-question-circle"></i></h1>
+      <form action="/add-challenges" method="POST">
+
+        <label for="textarea1">Name of challenge (Max 60 words)</label>
+        <textarea name="name" id="textarea1" maxlength="60" class="name"></textarea>
+        <label for="textarea2">Challenge Details/Description (Max 150 words)</label>
+        <textarea name="detail" id="textarea2" maxlength="150" class="about"></textarea>
+        
+        <label for="projectType">Tech stack</label>
+        <input type="text" id="type" maxlength="60" name="type" class="tech" />
+        
+
+        <label for="projectType">Contact link</label>
+        <input type="text" id="type" name="link" class="link" />
+        <input id="button" type="button" value="Create" />
+      </form>
+    </div>
+
+
+    <div id="footer" class="text-center" style=" color: white; font-size: 1.3rem;">
+      © 2023 Copyright:
+  <a class=" copyright" href="" style="
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    color: #be6a15;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-bottom: -7px;
+  ">Campustree.com</a>
+    </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://kit.fontawesome.com/1b26aa43df.js" crossorigin="anonymous"></script>
+
+
+<script>
+let tgl_button=document.getElementById("tgl_button");
+let container=document.querySelector(".container");
+
+tgl_button.addEventListener("click",()=>{if(tgl_button.classList.contains("collapsed")){container.style.marginTop="8rem";}   else{container.style.marginTop="20rem"}   });
+
+let name=document.querySelector(".name");
+let about=document.querySelector(".about");
+let link=document.querySelector(".link");
+let tech =document.querySelector(".tech");
+
+
+let button=document.getElementById("button");
+
+button.addEventListener("click",()=>{
+  if(name.value.length>2){
+if(about.value.length>9){
+
+  if(tech.value.length>2){
+
+  button.type="submit";
+
+  }else{
+alert("Tech stack should be min 3 digits long");
+  }
+}else{
+  alert("Description Should be 10 words long");
+}
+  }else{
+    alert("Name should be 3 digits long");
+  }
+})
+//   let textarea1=document.getElementById("textarea1");
+//   let textarea2=document.getElementById("textarea2");
+//   let teamMembers=document.getElementById("teamMembers");
+//   let projectType=document.getElementById("projectType");
+// let submit_button=document.getElementById("button");
+// //heading validation
+
+// // const validate_heading=(input)=>{
+// //   if(input.value<41){
+// //     return true;
+// //   }return false;
+// // };
+
+// // const validate_project_dsc=(input)=>{
+// //   if(input.value>61){
+// //     return true;
+// //   }return false;
+// // };
+
+
+//   let button=document.getElementById("button");
+//   button.addEventListener("click",()=>{
+// if(textarea1.value!=""){
+// if(textarea1.value!="" ){
+// if(teamMembers.value!="" && projectType!=""){
+// submit_button.type="submit";
+// }else{
+//   alert("Fill all details");
+// }
+// }else{
+//   alert("Fill all details");
+// }
+// }
+
+
+// else{
+//   alert("Fill all details");
+// }
+//   });
+
+//   textarea1.addEventListener("keypress",(e)=>{if(e.keyCode==32 && textarea1.value==""){e.preventDefault(); return false;}})
+//   textarea2.addEventListener("keypress",(e)=>{if(e.keyCode==32 && textarea2.value==""){e.preventDefault(); return false;}})
+//   projectType.addEventListener("keypress",(e)=>{if(e.keyCode==32 && textarea1.value==""){e.preventDefault(); return false;}})
+//   teamMembers.addEventListener("keypress",(e)=>{if(e.keyCode>48 && e.keyCode<58){console.log("ikak"); return true; }  else{e.preventDefault();return false;} });
+</script>
