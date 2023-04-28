@@ -169,7 +169,7 @@ console.log(data.secure_url);
 
 //find the user
 const update={profile_image:data.secure_url};
-const user=await register.findOneAndUpdate({user_id:req.cookies_user_id}, update, {
+const user=await register.findOneAndUpdate({user_id:req.cookies.user_id}, update, {
 
 });
 
